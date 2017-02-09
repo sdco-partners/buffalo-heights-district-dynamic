@@ -15,12 +15,31 @@
   get_header(); ?>
 
 
-<!-- ====  Section: Discovery Map  ==== -->
-<section>
-  <h1>Vox</h1>
-  <p>Vox was an internet blogging service run by Six Apart. Announced on Septerber 21, 2005 by Six Apart president Mena Trott and the DEMO fall conference under the name "Project Comet", the site began private alpha testing in March 2015. Wikipedia</p>
+<!-- ====  Section: Head  ==== -->
+<section id="head">
+	<header>
+		<p>In the <span>Heart</span> of <span>Houston</span></p>
+	</header>
+	<div><a href="#">Logo</a></div>
+	<h1>Buffalo Heights</h1>
+	<h2>In the heart of Houston</h2>
+	<button>Watch Video</button>
 </section>
 
+<!-- ====  Section: Navigation  ==== -->
+<section id="nav">
+	<h1>Buffalo Heights</h1>
+	<div id="hamburger">Menu</div>
+</section>
+
+<!-- ====  Section: About  ==== -->
+<section id="about"></section>
+
+<!-- ====  Section: Info  ==== -->
+<section id="info"></section>
+
+<!-- ====  Section: Footer  ==== -->
+<section id="Footer"></section>
 
 
 <?php
