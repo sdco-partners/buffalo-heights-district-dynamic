@@ -48,6 +48,7 @@ node_modules/
 
 # ignore WP config
 local-config.php
+wp-config.php
 
 # Vagrant
 .vagrant
