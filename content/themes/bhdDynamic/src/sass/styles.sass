@@ -69,7 +69,7 @@ $site-red: #EC5A4F
 $font-small: 0.55em  
 $font-sx1: 0.7em
 $font-sx2: 0.9em
-$font-body: 16px
+$font-body: 18px
 $font-bx1: 1.2em  
 $font-bx2: 1.4em  
 $font-bx3: 1.8em
@@ -126,7 +126,9 @@ $break-tiny: 300px
 /* SITE CONTEXT -> Global styles */
 
 h1
-
+  @extend .font-g-b
+  color: $site-black
+  font-size: $font-bx1
 
 h2
 
@@ -138,7 +140,9 @@ h4
  
 
 p
-  @xtend .font-g-m
+  @extend .font-g-m
+  font-size: $font-body
+  line-height: 0.4em
 
 html 
 
