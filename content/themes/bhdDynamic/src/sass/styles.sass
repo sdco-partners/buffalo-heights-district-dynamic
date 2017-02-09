@@ -56,12 +56,12 @@ a, u
 
 /* Colors */
 
-$site-bg: #F1F1F1
+$site-black: #4E4E56
+$site-cold: #C8C8C8
+$site-cream: #DDD7D1
+$site-ghost: #FDFBF9
 $site-white: #fff
-$site-black: #000
-$site-grey: #414042
-$site-purple: #6E5C7F
-$site-litePurple: #C7B8CD
+$site-red: #EC5A4F
 
 
 /* Font Sizes & Fonts */
@@ -75,38 +75,21 @@ $font-bx2: 1.4em
 $font-bx3: 1.8em
 
 
-// .font-cd-roman, 
-// .font-cd-italic, 
-// .font-cd-bold, 
-// .font-cd-bolditalic
-//   font-family: "Chronicle Display A", "Chronicle Display B"
-//   font-style: normal
-//   font-weight: 400
+.font-g-m
+  font-family: 'Geogrotesque W01 Medium1185174'
 
-// .font-tng-med
-//   font-family: "Tungsten A", "Tungsten B"
-//   font-style: normal
-//   font-weight: 600
+.font-g-sb
+  font-family: 'GeogrotesqueW01-Semibol1185180'
 
-// .font-gss-book,
-// .font-gss-italic,
-// .font-gss-bold,
-// .font-gss-bolditalic
-//   font-family: "Gotham SSm A", "Gotham SSm B"
-//   font-style: normal
-//   font-weight: 400
+.font-g-b
+  font-family: 'Geogrotesque W01 Bold' 
 
-// .font-cd-italic, 
-// .font-cd-bolditalic,
-// .font-gss-italic, 
-// .font-gss-bolditalic
-//   font-style: italic
+.font-hs-i
+  font-family: 'HumstSlab712 BT W00 Italic' 
 
-// .font-gss-bold, 
-// .font-gss-bolditalic,
-// .font-cd-bold,
-// .font-cd-bolditalic
-//   font-weight: 700
+.font-hs-b
+  font-family: 'HumanistSlab712W01-Bold' 
+
 
 
 /* Media Breakpoints & Mixins */
@@ -155,12 +138,13 @@ h4
  
 
 p
-
+  @xtend .font-g-m
 
 html 
 
 
 body
+  @extend .font-g-m
   font-size: $font-body
 
 

@@ -17,7 +17,8 @@
 
 <!-- ====  Section: Discovery Map  ==== -->
 <section>
-  <h1> Inititalize </h1>
+  <h1>Vox</h1>
+  <p>Vox was an internet blogging service run by Six Apart. Announced on Septerber 21, 2005 by Six Apart president Mena Trott and the DEMO fall conference under the name "Project Comet", the site began private alpha testing in March 2015. Wikipedia</p>
 </section>
 
 

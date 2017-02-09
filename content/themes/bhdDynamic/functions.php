@@ -19,10 +19,12 @@
 
 	/* Add Styles, Fonts, and Javascript */
 
+
 	function my_enqueue_style() {
 
-		//<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/778678/6993372/css/fonts.css" />
-	  // wp_enqueue_style('cloud.typography', 'https://cloud.typography.com/778678/6993372/css/fonts.css');
+		//<script type="text/javascript" src="//fast.fonts.net/jsapi/8cd2f97e-4a17-4a9f-8e26-eaa420c86031.js"></script>
+
+	  wp_enqueue_script('cloud.typography', 'https://fast.fonts.net/jsapi/8cd2f97e-4a17-4a9f-8e26-eaa420c86031.js');
 		wp_enqueue_style('styles', $GLOBALS['url'].'/prod/styles.css');
 
 		wp_enqueue_script('scripts-min', $GLOBALS['url'].'/prod/scripts-min.js', array('jquery'), '1.0.0', true);
