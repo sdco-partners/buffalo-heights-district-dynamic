@@ -1,8 +1,8 @@
 {
-  "name": "Buffalo Heights District",
+  "name": "Buffalo-Heights-District",
   "version": "1.0.0",
   "description": "Buffalo Heights District Dynamic Landing Page",
-  "main": "content/themes/ahw",
+  "main": "content/themes/bhdDynamic",
   "scripts": {
     "test": "test"
   },
