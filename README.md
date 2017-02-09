@@ -1,2 +1,2 @@
-# buffalo-heights-district-dynamic
+# Buffalo Heights Dynamic Landing Page 
 Dynamic Landing Page
