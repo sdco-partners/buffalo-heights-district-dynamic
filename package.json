@@ -1,0 +1,31 @@
+{
+  "name": "Buffalo Heights District",
+  "version": "1.0.0",
+  "description": "Buffalo Heights District Dynamic Landing Page",
+  "main": "content/themes/ahw",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdco-partners/buffalo-heights-district-dynamic"
+  },
+  "author": "SDCO Partners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdco-partners/buffalo-heights-district-dynamic/issues"
+  },
+  "homepage": "https://github.com/sdco-partners/buffalo-heights-district-dynamic#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1",
+    "modernizr": "^3.3.1"
+  },
+  "dependencies": {}
+}
