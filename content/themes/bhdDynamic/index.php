@@ -120,11 +120,44 @@
 	</div>
 </section>
 
-
+<!-- ====  Section: Connect  ==== -->
+<section id="connect">
+	<div>04</div>
+	<div>
+	  <h1>Connect</h1>
+	  <div>
+	    555 123 4567
+	    info@buffaloheights.com
+	  </div>
+	</div>
+</section>
 
 <!-- ====  Section: Footer  ==== -->
-<section id="Footer"></section>
+<section id="footer">
+	<div>
+		<h1>In the <span>Heart</span> of Houston</h1>
+	</div>
+	<div>
+	  <ul>
+	    <li></li>
+	    <li></li>
+	    <li></li>
+	  </ul>
+	</div>
+	<div>
+	  Owner
+	  BKR Memorial II, LLC
+	</div>
+	<div>
+	  Developer
+	  Midway
+	</div>
+	<div>
+	  Copyright 2017 Buffalo Heights
+    Site by SDCO. Partners
+	</div>
 
+</section>
 
 <?php
 
