@@ -21,13 +21,13 @@ if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'bhd_prod12');
+	define('DB_NAME', 'root');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'bhd_admin19');
+	define('DB_USER', 'root');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'nineteen');
+	define('DB_PASSWORD', 'password');
 }
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
@@ -88,16 +88,16 @@ define('WPLANG', '');
  * These are required because wordpress is installed in a subdirectory.
  */
 if (!defined('WP_SITEURL')) {
-	define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+	define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/wordpress');
 }
 if (!defined('WP_HOME')) {
-	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '');
+	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/');
 }
 if (!defined('WP_CONTENT_DIR')) {
-	define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
+	define('WP_CONTENT_DIR', dirname(__FILE__) . '/buffalo-heights-district-dynamic/content');
 }
 if (!defined('WP_CONTENT_URL')) {
-	define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/content');
+	define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/content');
 }
 
 
@@ -109,7 +109,7 @@ if (!defined('WP_CONTENT_URL')) {
  * in their development environments.
  */
 if (!defined('WP_DEBUG')) {
-	define('WP_DEBUG', false);
+	define('WP_DEBUG', true);
 }
 
 /* That's all, stop editing! Happy blogging. */
