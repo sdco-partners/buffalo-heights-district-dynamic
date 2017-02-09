@@ -1,0 +1,175 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+
+/* HTML5 display-role reset for older browsers  */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+  display: block
+
+
+body 
+  line-height: 1
+
+
+ol, ul 
+  list-style: none
+
+
+blockquote, q 
+  quotes: none
+
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+  content: ''
+  content: none
+
+
+table 
+  border-collapse: collapse
+  border-spacing: 0
+
+
+a, u 
+  text-decoration: none
+
+
+/* Colors */
+
+$site-bg: #F1F1F1
+$site-white: #fff
+$site-black: #000
+$site-grey: #414042
+$site-purple: #6E5C7F
+$site-litePurple: #C7B8CD
+
+
+/* Font Sizes & Fonts */
+
+$font-small: 0.55em  
+$font-sx1: 0.7em
+$font-sx2: 0.9em
+$font-body: 16px
+$font-bx1: 1.2em  
+$font-bx2: 1.4em  
+$font-bx3: 1.8em
+
+
+// .font-cd-roman, 
+// .font-cd-italic, 
+// .font-cd-bold, 
+// .font-cd-bolditalic
+//   font-family: "Chronicle Display A", "Chronicle Display B"
+//   font-style: normal
+//   font-weight: 400
+
+// .font-tng-med
+//   font-family: "Tungsten A", "Tungsten B"
+//   font-style: normal
+//   font-weight: 600
+
+// .font-gss-book,
+// .font-gss-italic,
+// .font-gss-bold,
+// .font-gss-bolditalic
+//   font-family: "Gotham SSm A", "Gotham SSm B"
+//   font-style: normal
+//   font-weight: 400
+
+// .font-cd-italic, 
+// .font-cd-bolditalic,
+// .font-gss-italic, 
+// .font-gss-bolditalic
+//   font-style: italic
+
+// .font-gss-bold, 
+// .font-gss-bolditalic,
+// .font-cd-bold,
+// .font-cd-bolditalic
+//   font-weight: 700
+
+
+/* Media Breakpoints & Mixins */
+
+$break-xlarge: 1280px
+$break-large: 1024px
+$break-medium: 850px
+$break-small: 700px
+$break-tiny: 300px
+
+
+=max 
+  @media(min-width: #{$break-xlarge})
+    @content
+
+=medium
+  @media(max-width: #{$break-xlarge})
+    @content
+
+=min
+  @media(max-width: #{$break-medium})
+    @content
+
+
+/* Flux */
+
+=flxx($d: flex, $j: space-between, $a: flex-start, $f: wrap)
+  display: $d
+  justify-content: $j
+  align-items: $a
+  flex-wrap: $f
+
+
+/* SITE CONTEXT -> Global styles */
+
+h1
+
+
+h2
+
+
+h3
+
+
+h4
+ 
+
+p
+
+
+html 
+
+
+body
+  font-size: $font-body
+
+
+
+/* BROWSER DETECTION */
+
+=browser($browsers: Mozilla)
+  @each $browser in $browsers
+    html[data-browser*="#{$browser}"] &
+      @content
+
+
