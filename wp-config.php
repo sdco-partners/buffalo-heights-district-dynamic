@@ -91,10 +91,10 @@ if (!defined('WP_SITEURL')) {
 	define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/wordpress');
 }
 if (!defined('WP_HOME')) {
-	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/');
+	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic');
 }
 if (!defined('WP_CONTENT_DIR')) {
-	define('WP_CONTENT_DIR', dirname(__FILE__) . '/buffalo-heights-district-dynamic/content');
+	define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
 }
 if (!defined('WP_CONTENT_URL')) {
 	define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/buffalo-heights-district-dynamic/content');
