@@ -5,7 +5,10 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 
-
+#head
+  header
+    height: 35px
+    padding-top: 5px
 
 
 /* OBJECTS -> For styling objects */
@@ -13,12 +16,17 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 #head
-  > header
+  header
     background-color: $site-red
-    color: $site-white
-    text-transform: uppercase
-    text-align: center
-    font-size: $font-sx1
 
-    > span 
-      font-family: .font-hs-i
+    > p
+      color: $site-white
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      text-align: center
+      font-size: $font-small
+
+      > span 
+        @extend .font-hs-i
+        text-transform: initial
+        font-size: $font_bx2
