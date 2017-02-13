@@ -1,0 +1,29 @@
+/*  _about.sass */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+.chapter
+  margin-left: 75px
+
+.dash
+  display: inline-block
+  width: 35px
+  margin-bottom: 10px
+
+
+  
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+.chapter
+  @extend .font-g-b
+  color: $site-red
+  font-size: $font-bx3
+  letter-spacing: 0.3em
+
+.dash
+  border-bottom: 5px solid $site-black

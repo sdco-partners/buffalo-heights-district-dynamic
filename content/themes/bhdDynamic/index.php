@@ -27,13 +27,14 @@
 
 <!-- ====  Section: About  ==== -->
 <section id="about">
-	<div class="chapter">01</div>
+	<div class="chapter">01<div class="dash"></div></div>
+
 	<article>
 		<h1>In the <span>Heart</span> of Houston</h1>
 		<p>Buffalo Heights is a high quality, mixed-use district ideally located in the proximity to Houston's Buffalo Bayou Park, Memorial Park, the Heights, Washington Avenue Corridor and Downtown.</p>
 	</article>
   <div>
-	  <div>Seal</div>
+	  <div id="hear-houston"><?php echo file_get_contents($GLOBALS['url']."/assets/heart-houston.svg"); ?></div>
 		<img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
 	</div>
 	<article>
