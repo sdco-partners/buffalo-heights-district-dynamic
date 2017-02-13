@@ -33,15 +33,23 @@
 		<h1>In the <span>Heart</span> of Houston</h1>
 		<p>Buffalo Heights is a high quality, mixed-use district ideally located in the proximity to Houston's Buffalo Bayou Park, Memorial Park, the Heights, Washington Avenue Corridor and Downtown.</p>
 	</article>
-  <div>
-	  <div id="hear-houston"><?php echo file_get_contents($GLOBALS['url']."/assets/heart-houston.svg"); ?></div>
-		<img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+
+  <div id="hear-houston">
+	  <?php echo file_get_contents($GLOBALS['url']."/assets/heart-houston.svg"); ?>
+  </div>
+
+  <div id="about-slider-01">
+		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
 	</div>
+
 	<article>
 		<img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
 		<h1><span>1500</span><sup>+</sup> Acres of urban parkland</h1>
 		<p>This innovative real estate development will offer a complete lifestye built around outdoor activity, healthy local food, and signature greenspace in the region's most desirable and accessible urban infill location. New development and upgrades to existing buildings will enhance proximity to the trails and bayou, and more than 1,500 acres of parkland in the urban core of the city</p>
   </article>
+  
 	<blockquote>
 		<h1>There is no location like this one in Houston</h1>
 		<h2>Russel Gordy Owner of BKR Memorial II, LLC</h2>
