@@ -39,7 +39,7 @@
 		January 2017</h2>
 	  <div class="link-to-press"><a href="#" alt="">Read More</a></div>
 	</blockquote>	
-  <div>
+  <div id="press-section">
     <article class="press-box">
       <h1>
         Houston Chronicle
@@ -69,7 +69,7 @@
       <div class="link-to-press"><a href="#" alt="">Read More</a></div>
     </article>
   </div>
-  <img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
+  <img class="" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
 </section>
 
 <!-- ====  Section: Info  ==== -->
