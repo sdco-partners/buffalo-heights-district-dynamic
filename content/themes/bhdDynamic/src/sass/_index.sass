@@ -7,12 +7,19 @@
 .chapter
   margin-left: 75px
 
+
 .dash
   display: inline-block
   width: 35px
   margin-bottom: 10px
 
 
+blockquote
+  > h1
+    margin: 60px 10% 30px 10%
+
+  > h2
+    margin: 30px 50% 30px 10%
   
 
 /* OBJECTS -> For styling objects */
@@ -25,5 +32,21 @@
   font-size: $font-bx3
   letter-spacing: 0.3em
 
+
 .dash
   border-bottom: 5px solid $site-black
+
+
+blockquote
+
+  > h1
+    @extend .font-g-b
+    font-size: $font-xl
+    letter-spacing: 0.1em
+    line-height: 1.2em
+
+  > h2
+    font-size: $font-bx1
+    letter-spacing: 0.2em
+    line-height: 1.5em
+    text-transform: uppercase
