@@ -62,7 +62,7 @@ $site-cream: #DDD7D1
 $site-ghost: #FDFBF9
 $site-white: #fff
 $site-red: #EC5A4F
-
+$site-darkred: #C14A36
 
 /* Font Sizes & Fonts */
 
@@ -124,11 +124,6 @@ $break-tiny: 300px
   align-items: $a
   flex-wrap: $f
 
-=fcol($d: flex, $j: space-between, $a: flex-start, $f: wrap)
-  display: $d
-  justify-content: $j
-  align-items: $a
-  flex-wrap: $f
 
 
 /* SITE CONTEXT -> Global styles */
@@ -162,6 +157,9 @@ body
   letter-spacing: 0.05em
   color: $site-black
 
+img
+  width: 100%
+
 
 
 /* BROWSER DETECTION */
@@ -173,3 +171,5 @@ body
 
 
 @import 'head'
+@import 'nav'
+@import 'about'

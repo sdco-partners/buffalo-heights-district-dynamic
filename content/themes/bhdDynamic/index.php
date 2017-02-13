@@ -17,25 +17,17 @@
 
 <!-- ====  Section: Head  ==== -->
 <section id="head">
-	<header>
-		<p>In the <span>Heart</span> of <span>Houston</span></p>
-	</header>
-	<div id="head-seal"><a href="#"><?php echo file_get_contents($GLOBALS['url']."/assets/bhd-logo-seal.svg"); ?></a></div>
-	<h1>Buffalo Heights</h1>
-	<div class="underbar"></div>
-	<h2>In the heart of Houston</h2>
-	<button>Watch Video</button>
+  <?php get_template_part('components/main'); ?>
 </section>
 
 <!-- ====  Section: Navigation  ==== -->
 <section id="nav">
-	<h1>Buffalo Heights</h1>
-	<div id="hamburger">Menu</div>
+	<?php get_template_part('components/nav'); ?>
 </section>
 
 <!-- ====  Section: About  ==== -->
 <section id="about">
-	<div>01</div>
+	<div class="chapter">01</div>
 	<article>
 		<h1>In the <span>Heart</span> of Houston</h1>
 		<p>Buffalo Heights is a high quality, mixed-use district ideally located in the proximity to Houston's Buffalo Bayou Park, Memorial Park, the Heights, Washington Avenue Corridor and Downtown.</p>
