@@ -118,7 +118,13 @@ $break-tiny: 300px
 
 /* Flux */
 
-=flxx($d: flex, $j: space-between, $a: flex-start, $f: wrap)
+=frow($d: flex, $j: space-between, $a: flex-start, $f: wrap)
+  display: $d
+  justify-content: $j
+  align-items: $a
+  flex-wrap: $f
+
+=fcol($d: flex, $j: space-between, $a: flex-start, $f: wrap)
   display: $d
   justify-content: $j
   align-items: $a
@@ -128,7 +134,7 @@ $break-tiny: 300px
 /* SITE CONTEXT -> Global styles */
 
 h1
-  @extend .font-g-b
+  @extend .font-g-sb
   color: $site-black
   font-size: $font-bx3
   letter-spacing: 0.15em
