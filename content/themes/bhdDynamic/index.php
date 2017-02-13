@@ -40,41 +40,33 @@
 	  <div class="link-to-press"><a href="#" alt="">Read More</a></div>
 	</blockquote>	
   <div>
-    <article>
-      <div>
+    <article class="press-box">
+      <h1>
         Houston Chronicle
         January 2017
-      </div>
-      <div>
-        <a href="#" alt="">Read More</a>
-      </div>
-    </article>>
-    <article>
-      <div>
+      </h1>
+      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
+    </article>
+    <article class="press-box">
+      <h1>
         Houston Chronicle
         January 2017
-      </div>
-      <div>
-        <a href="#" alt="">Read More</a>
-      </div>
-    </article>>
-    <article>
-      <div>
+      </h1>
+      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
+    </article>
+    <article class="press-box">
+      <h1>
         Houston Chronicle
         January 2017
-      </div>
-      <div>
-        <a href="#" alt="">Read More</a>
-      </div>
-    </article>>
-    <article>
-      <div>
+      </h1>
+      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
+    </article>
+    <article class="press-box">
+      <h1>
         Houston Chronicle
         January 2017
-      </div>
-      <div>
-        <a href="#" alt="">Read More</a>
-      </div>
+      </h1>
+      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
     </article>
   </div>
   <img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />

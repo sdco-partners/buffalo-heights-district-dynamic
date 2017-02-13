@@ -17,6 +17,17 @@
     padding-bottom: 5px
 
 
+.press-box
+  position: relative
+  margin: 0 auto -8px
+  width: 400px
+  height: 275px
+  z-index: 30
+
+  > h1
+    margin: 10%
+
+
 #sub-03
 
   > h1
@@ -29,7 +40,7 @@
 
 #press
 
-  article
+  > article
 
     > h1
       @extend .font-g-b
@@ -45,3 +56,10 @@
     letter-spacing: 0.1em
     border-bottom: 8px solid $site-black
 
+.press-box
+  border: 8px solid $site-black
+
+  > h1
+    font-size: $font-bx1
+    letter-spacing: 0.2em
+    line-height: 2em
