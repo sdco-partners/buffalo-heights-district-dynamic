@@ -35,12 +35,10 @@
   <div class="chapter">02<div class="dash"></div></div>
   <blockquote>
 		<h1>Quote from article quote from Article</h1>
-		<div>Houston Chronicle
-		January 2017</div>
-	</div>	
-	<div>
-	  <a href="#" alt="">Read More</a>
-	</div>
+		<h2>Houston Chronicle
+		January 2017</h2>
+	  <div class="link-to-press"><a href="#" alt="">Read More</a></div>
+	</blockquote>	
   <div>
     <article>
       <div>
