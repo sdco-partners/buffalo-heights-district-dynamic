@@ -7,21 +7,58 @@
 #about
   margin-top: 80px
 
-  article 
-
-    > h1 
-      margin: 60px 75px 30px 75px
+  article
+    > h1
 
       > span
         display: block
         margin-top: 25px
         margin-bottom: 25px
-        margin-left: -8px
-
     > p
       margin-left: 75px
       margin-right: 75px
       margin-bottom: 60px
+  
+  blockquote
+    > h1
+      margin: 60px 10% 30px 10%
+
+    > h2
+      margin: 30px 50% 30px 10%
+
+
+.indented-img
+  margin: 60px 10% 30px 10%
+  width: 80vw
+
+
+#sub-01
+
+  > h1 
+    margin: 60px 10% 30px 10%
+
+    > span
+      display: block
+      margin-top: 25px
+      margin-bottom: 25px
+      margin-left: -8px
+
+
+#sub-02
+
+  > h1
+    margin: -80px 10% 30px 12%
+
+
+#sub-03
+
+  > h1
+    margin: 60px 10% 60px 10%
+
+    > span
+      display: block
+      margin-top: 25px
+      margin-bottom: 25px
 
 
 #hear-houston
@@ -35,11 +72,13 @@
     position: relative
     z-index: 20
 
+
 #about-slider-01
   +frow(flex, space-between, flex-start, nowrap)
   width: 100vw
   height: 550px
   overflow: scroll
+
 
 .about-slider-img
   flex: 0 0 100%
@@ -61,13 +100,28 @@
       letter-spacing: 0.1em
 
       > span
-        font-size: $font-xl
+        font-size: $font-bx5
         letter-spacing: 0.15em
     
     > p
       font-size: $font-bx2
       line-height: 1.5em
       letter-spacing: 0.07em
+
+
+  blockquote
+
+    > h1
+      @extend .font-g-b
+      font-size: $font-xl
+      letter-spacing: 0.1em
+      line-height: 1.2em
+
+    > h2
+      font-size: $font-bx1
+      letter-spacing: 0.2em
+      line-height: 1.5em
+      text-transform: uppercase
 
 
 
