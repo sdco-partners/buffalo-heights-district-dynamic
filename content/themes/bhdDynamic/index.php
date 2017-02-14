@@ -37,24 +37,12 @@
 
 <!-- ====  Section: Info  ==== -->
 <section id="info">
-	<div class="chapter">03<div class="dash"></div></div>
-	<div>
-	  <h1>Leasing Information</h1>
-	  <div class="linkout"><a href="#" alt="">Download Leasing PDF</a></div>
-	  <div class="linkout"><a href="#" alt="">Download Floor Plans PDF</a></div>
-	</div>
+  <?php get_template_part('components/info'); ?>
 </section>
 
 <!-- ====  Section: Connect  ==== -->
 <section id="connect">
-	<div>04</div>
-	<div>
-	  <h1>Connect</h1>
-	  <address>
-	    555 123 4567<br>
-	    info@buffaloheights.com<br>
-	  </address>
-	</div>
+  <?php get_template_part('components/connect'); ?>
 </section>
 
 <!-- ====  Section: Footer  ==== -->
