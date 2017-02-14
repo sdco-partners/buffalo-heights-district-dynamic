@@ -30,55 +30,18 @@
   <?php get_template_part('components/about'); ?>
 </section>
 
-<!-- ====  Section: Pres  ==== -->
+<!-- ====  Section: Press  ==== -->
 <section id="press">
-  <div class="chapter">02<div class="dash"></div></div>
-  <blockquote>
-		<h1>Quote from article quote from Article</h1>
-		<h2>Houston Chronicle
-		January 2017</h2>
-	  <div class="link-to-press"><a href="#" alt="">Read More</a></div>
-	</blockquote>	
-  <div id="press-section">
-    <article class="press-box">
-      <h1>
-        Houston Chronicle
-        January 2017
-      </h1>
-      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
-    </article>
-    <article class="press-box">
-      <h1>
-        Houston Chronicle
-        January 2017
-      </h1>
-      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
-    </article>
-    <article class="press-box">
-      <h1>
-        Houston Chronicle
-        January 2017
-      </h1>
-      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
-    </article>
-    <article class="press-box">
-      <h1>
-        Houston Chronicle
-        January 2017
-      </h1>
-      <div class="link-to-press"><a href="#" alt="">Read More</a></div>
-    </article>
-  </div>
-  <img class="" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
+  <?php get_template_part('components/press'); ?>
 </section>
 
 <!-- ====  Section: Info  ==== -->
 <section id="info">
-	<div>03</div>
+	<div class="chapter">03<div class="dash"></div></div>
 	<div>
 	  <h1>Leasing Information</h1>
-	  <a href="#" alt="">Download Leasing PDF</a>
-	  <a href="#" alt="">Download Floor Plans PDF</a>
+	  <div class="linkout"><a href="#" alt="">Download Leasing PDF</a></div>
+	  <div class="linkout"><a href="#" alt="">Download Floor Plans PDF</a></div>
 	</div>
 </section>
 

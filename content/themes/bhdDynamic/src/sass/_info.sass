@@ -1,0 +1,24 @@
+/*  _press.sass */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+#info
+  margin-top: -110px
+  
+  h1
+    margin: 40px 10% 20px 10%
+  
+  .linkout
+    padding-bottom: 30px
+
+/* OBJECTS -> For styling objects */ 
+/* Includes cosmetic styles like color, typography, and borders */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+#info
+  h1
+    @extend .font-g-b
+    font-size: $font-xl
+    letter-spacing: 0.1em
