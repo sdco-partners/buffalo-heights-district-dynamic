@@ -14,16 +14,18 @@
     padding-top: 5px
 
   #head-seal
-    width: 14%
-    height: 14%
-    margin: 45% auto 0
+    width: 75px
+    height: 75px
+    margin: 250px auto 25px
 
   > button
     display: block
     margin: 40px auto 0
-    padding: 15px 50px
+    padding: 20px 60px
 
-
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+/* INCEPTION RULE: DO NOT nest more than 4  */
 
 
 #head
@@ -67,6 +69,11 @@
     color: $site-white
     text-transform: uppercase
     border: 4px solid $site-white
+    transition: background-color 0.5s, color 0.5s
+
+    &:hover
+      background-color: $site-white
+      color: $site-black
 
 
 
