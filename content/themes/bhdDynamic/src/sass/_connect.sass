@@ -11,6 +11,10 @@
   h1
     margin: 40px 10% 20px 10%
 
+  address
+	  margin-left: 10%
+	  margin-right: 10%
+
 /* OBJECTS -> For styling objects */ 
 /* Includes cosmetic styles like color, typography, and borders */
 /* INCEPTION RULE: DO NOT nest more than 4  */
@@ -18,5 +22,11 @@
 #connect
   h1
     @extend .font-g-b
-    font-size: $font-xl
+    font-size: $font-bx4
     letter-spacing: 0.1em
+
+  address
+    @extend .font-g-b
+    font-size: $font-bx1
+    line-height: 2em
+    text-transform: uppercase
