@@ -10,7 +10,7 @@
   article
     > h1
 
-      span
+      .fits
         display: block
         margin-top: 10px
         margin-bottom: 15px
@@ -20,20 +20,24 @@
       margin-right: 10%
       margin-bottom: 60px
 
+  sup
+    vertical-align: text-top
+
+
 
 #sub-01
 
   h1 
     margin: 60px 10% 30px 10%
 
-    > span
+    > .fits
       margin-left: -4px
 
 
 #sub-02
 
   > h1
-    margin: -80px 10% 30px 12%
+    margin: -100px 10% 30px 12%
 
 
 #sub-03
@@ -41,7 +45,7 @@
   > h1
     margin: 60px 10% 60px 10%
 
-    > span
+    > .fits
       display: block
       margin-top: 25px
       margin-bottom: 25px
@@ -62,7 +66,6 @@
 #about-slider-01
   +frow(flex, space-between, flex-start, nowrap)
   width: 100vw
-  height: 550px
   overflow: scroll
 
 
@@ -85,7 +88,7 @@
       font-size: $font-bx4
       letter-spacing: 0.1em
 
-      > span
+      > .fits
         font-size: $font-bx4
         letter-spacing: 0.15em
     
@@ -93,3 +96,9 @@
       font-size: $font-bx2
       line-height: 1.5em
       letter-spacing: 0.07em
+
+  sup
+    font-size: $font-small
+
+.too-long
+  font-size: $font-bx1
