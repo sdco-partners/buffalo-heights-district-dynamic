@@ -6,6 +6,14 @@
 
 #footer
 
+  header
+
+    > p 
+      padding-top: 100px
+      width: 150px
+      margin-left: auto
+      margin-right: auto
+
 
 
 /* OBJECTS -> For styling objects */ 
@@ -14,3 +22,26 @@
 
 #footer
   background-color: $site-black
+  
+  header
+    color: $site-white
+    text-transform: uppercase
+
+    > p
+      color: $site-white
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      text-align: center
+      font-size: $font-sx2
+
+      > span 
+        @extend .font-hs-i
+        text-transform: initial
+        font-size: $font_bx2
+
+    > .underbar
+      border-width: 4px
+
+  ul li
+    > svg
+      width: 80px

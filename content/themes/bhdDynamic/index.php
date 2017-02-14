@@ -17,7 +17,7 @@
 
 <!-- ====  Section: Head  ==== -->
 <section id="head">
-  <?php get_template_part('components/main'); ?>
+  <?php get_template_part('components/head'); ?>
 </section>
 
 <!-- ====  Section: Navigation  ==== -->
@@ -47,14 +47,15 @@
 
 <!-- ====  Section: Footer  ==== -->
 <section id="footer">
-	<div>
-		<h1>In the <span>Heart</span> of Houston</h1>
-	</div>
+	<header>
+		<p>In the <span>Heart of</span> Houston</p>
+		<div class="underbar"></div>
+	</header>
 	<div>
 	  <ul>
-	    <li></li>
-	    <li></li>
-	    <li></li>
+	    <li><?php echo file_get_contents($GLOBALS['url']."/assets/vimeo.svg"); ?></li>
+	    <li><?php echo file_get_contents($GLOBALS['url']."/assets/mail.svg"); ?></li>
+	    <li><?php echo file_get_contents($GLOBALS['url']."/assets/info.svg"); ?></li>
 	  </ul>
 	</div>
 	<div>
