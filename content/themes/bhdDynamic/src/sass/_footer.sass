@@ -5,6 +5,7 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 #footer
+  padding-bottom: 150px
 
   header
 
@@ -13,7 +14,26 @@
       width: 150px
       margin-left: auto
       margin-right: auto
+      margin-bottom: 20px
 
+  h1, h2
+    margin-right: 10%
+    margin-left: 10%
+
+  h1
+    margin-bottom: 100px
+
+  h2
+    margin-bottom: 20px
+
+#footer-links
+  +frow
+  width: 400px
+  margin: 100px auto 100px
+
+.links
+    svg
+      width: 80px
 
 
 /* OBJECTS -> For styling objects */ 
@@ -21,6 +41,10 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 #footer
+  background-image: url('/buffalo-heights-district-dynamic/content/themes/bhdDynamic/assets/bhd-logo-monogram.svg')
+  background-repeat: no-repeat
+  background-position: 50% 300px
+  background-size: 80% 80%
   background-color: $site-black
   
   header
@@ -32,7 +56,7 @@
       text-transform: uppercase
       letter-spacing: 0.1em
       text-align: center
-      font-size: $font-sx2
+      font-size: $font-body
 
       > span 
         @extend .font-hs-i
@@ -42,6 +66,14 @@
     > .underbar
       border-width: 4px
 
-  ul li
-    > svg
-      width: 80px
+  h1
+    font-size: $font-bx1
+    letter-spacing: 0.2em
+    color: $site-white
+    text-transform: uppercase
+
+
+  h2
+    color: $site-red
+    letter-spacing: 0.2em
+    text-transform: uppercase
