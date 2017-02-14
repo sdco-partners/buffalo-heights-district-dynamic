@@ -1,6 +1,6 @@
 <?php
   /** 
-  * Section => Main
+  * Section => Head
   */ 
 ?>
  
