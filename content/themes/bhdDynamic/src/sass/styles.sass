@@ -1,132 +1,8 @@
-/* RESET CSS */
+@import 'reset'
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-  margin: 0
-  padding: 0
-  border: 0
-  font-size: 100%
-  font: inherit
-  vertical-align: baseline
+@import 'variables'
 
-
-/* HTML5 display-role reset for older browsers  */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section 
-  display: block
-
-
-body 
-  line-height: 1
-
-
-ol, ul 
-  list-style: none
-
-
-blockquote, q 
-  quotes: none
-
-
-blockquote:before, blockquote:after,
-q:before, q:after 
-  content: ''
-  content: none
-
-
-table 
-  border-collapse: collapse
-  border-spacing: 0
-
-
-a, u 
-  text-decoration: none
-
-
-/* Colors */
-
-$site-black: #4E4E56
-$site-cold: #C8C8C8
-$site-cream: #DDD7D1
-$site-ghost: #FDFBF9
-$site-white: #fff
-$site-red: #EC5A4F
-$site-darkred: #C14A36
-
-/* Font Sizes & Fonts */
-
-$font-small: 0.6em  
-$font-sx1: 0.7em
-$font-sx2: 0.9em
-$font-body: 18px
-$font-bx1: 1.2em  
-$font-bx2: 1.6em  
-$font-bx3: 2em
-$font-bx4: 2.3em
-$font-bx5: 2.7em
-$font-xl: 3em
-
-.font-g-m
-  font-family: 'Geogrotesque W01 Medium1185174'
-
-.font-g-sb
-  font-family: 'GeogrotesqueW01-Semibol1185180'
-
-.font-g-b
-  font-family: 'Geogrotesque W01 Bold' 
-
-.font-hs-i
-  font-family: 'HumstSlab712 BT W00 Italic' 
-  font-style: italic
-  font-weight: 400
-
-.font-hs-b
-  font-family: 'HumanistSlab712W01-Bold' 
-
-
-
-/* Media Breakpoints & Mixins */
-
-$break-xlarge: 1280px
-$break-large: 1024px
-$break-medium: 850px
-$break-small: 700px
-$break-tiny: 300px
-
-
-=max 
-  @media(min-width: #{$break-xlarge})
-    @content
-
-=medium
-  @media(max-width: #{$break-xlarge})
-    @content
-
-=min
-  @media(max-width: #{$break-medium})
-    @content
-
-
-/* Flexbox */
-
-=frow($d: flex, $j: space-between, $a: flex-start, $f: wrap)
-  display: $d
-  justify-content: $j
-  align-items: $a
-  flex-wrap: $f
-
-
+@import 'mixins'
 
 /* SITE CONTEXT -> Global styles */
 
@@ -163,7 +39,6 @@ img
   width: 100%
 
 
-
 /* BROWSER DETECTION  */
 
 =browser($browsers: Mozilla)
@@ -173,10 +48,17 @@ img
 
 
 @import 'index'
+
 @import 'head'
+
 @import 'nav'
+
 @import 'about'
+
 @import 'press'
+
 @import 'info'
+
 @import 'connect'
+
 @import 'foot'

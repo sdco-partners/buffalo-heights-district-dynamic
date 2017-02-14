@@ -4,6 +4,15 @@
 /* includes positioning styles like display, padding, margin, height */
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
+blockquote
+  margin-bottom: 80px
+  > h1
+    margin: 60px 10% 30px 10%
+
+  > h2
+    margin: 30px 40% 30px 10%
+
+
 .chapter
   margin-left: 10%
 
@@ -13,18 +22,10 @@
   width: 35px
   margin-bottom: 10px
 
+
 .underbar
     width: 30px
     margin: 10px auto 25px
-
-
-blockquote
-  margin-bottom: 80px
-  > h1
-    margin: 60px 10% 30px 10%
-
-  > h2
-    margin: 30px 40% 30px 10%
 
 
 .linkout
@@ -44,19 +45,6 @@ blockquote
 /* Includes cosmetic styles like color, typography, and borders */
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
-.chapter
-  @extend .font-g-b
-  color: $site-red
-  font-size: $font-bx3
-  letter-spacing: 0.3em
-
-
-.dash
-  border-bottom: 5px solid $site-black
-
-.underbar
-    border: 2px solid $site-white
-
 blockquote
 
   > h1
@@ -70,6 +58,21 @@ blockquote
     letter-spacing: 0.2em
     line-height: 1.5em
     text-transform: uppercase
+
+
+.chapter
+  @extend .font-g-b
+  color: $site-red
+  font-size: $font-bx3
+  letter-spacing: 0.3em
+
+
+.dash
+  border-bottom: 5px solid $site-black
+
+
+.underbar
+    border: 2px solid $site-white
 
 
 .linkout
