@@ -1,4 +1,4 @@
-/*  _about.sass */
+/*  _index.sass */
 
 /* PAGE CONTEXT -> For positioning items */
 /* includes positioning styles like display, padding, margin, height */
@@ -7,7 +7,9 @@
 blockquote
   margin-bottom: 80px
   > h1
-    margin: 60px 10% 30px 10%
+    +marg
+    margin-top: 60px
+    margin-bottom: 30px
 
   > h2
     margin: 30px 40% 30px 10%
@@ -72,11 +74,10 @@ blockquote
 
 
 .underbar
-    border: 2px solid $site-white
+  border: 2px solid $site-white
 
 
 .linkout
-
   > a
     color: $site-red
     font-size: $font_body

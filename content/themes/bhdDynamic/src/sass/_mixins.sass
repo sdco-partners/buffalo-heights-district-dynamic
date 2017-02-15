@@ -5,7 +5,6 @@ $break-large: 1024px
 $break-medium: 850px
 $break-small: 500px
 
-
 =max 
   @media(min-width: #{$break-xlarge})
     @content
@@ -26,3 +25,10 @@ $break-small: 500px
   justify-content: $j
   align-items: $a
   flex-wrap: $f
+
+
+/* Margins 10% */
+
+=marg($m: 10%)
+  margin-left: $m
+  margin-right: $m 
