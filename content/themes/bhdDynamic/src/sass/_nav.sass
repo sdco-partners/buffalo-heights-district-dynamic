@@ -9,17 +9,61 @@
   height: 65px
   padding-top: 20px
 
+  +medium
+    padding-left: 200px
+    padding-right: 200px
+
   > h1
     margin-left: 30px
     margin-top: 5px
+
     +min
       margin-top: initial
+
+    +medium
+      display: none
 
   > #hamburger
     width: 50px
     height: 28.25px
     margin-top: 5px
     margin-right: 30px
+
+    +medium
+      display: none
+
+  > .fullmenu
+    display: none
+    z-index: 11
+
+    +medium
+      display: block
+      flex: 0 0 100px
+      padding-top: 5px
+
+    &:hover:after
+      position: relative
+      right: 50%
+      top: 8px
+      z-index: 10px
+      line-height: 0
+
+#nav-01
+  &:hover:after
+
+
+#nav-02
+  &:hover:after
+
+
+
+#nav-03
+  &:hover:after
+
+
+#nav-04
+  &:hover:after
+
 
 
 /* OBJECTS -> For styling objects */
@@ -33,5 +77,46 @@
     color: $site-darkred
     font-size: $font-bx1
     opacity: 0.7
+
     +min
       font-size: $font-bx2
+
+  > .fullmenu
+    @extend .font-hs-b
+
+    &:hover:after
+      color: $site-darkred
+      font-size: $font-bx4
+      opacity: 0.7
+    
+    > a 
+      color: $site-white
+      font-size: $font-sx2
+      text-transform: uppercase
+      letter-spacing: 0.2em
+
+
+#nav-01
+  &:hover:after
+    content: "01"
+
+
+#nav-02
+  &:hover:after
+    content: "02"
+
+  &:hover
+    display: block
+
+
+#nav-03
+  &:hover:after
+    content: "03"
+
+
+#nav-04
+  &:hover:after
+    content: "04"
+
+
+
