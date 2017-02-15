@@ -8,7 +8,9 @@
   margin-top: -100px
   
   h1
-    margin: 40px 10% 20px 10%
+    +marg
+    margin-top: 40px
+    margin-bottom: 20px
   
   .linkout
     padding-bottom: 30px
@@ -22,3 +24,6 @@
     @extend .font-g-b
     font-size: $font-bx4
     letter-spacing: 0.1em
+
+    +min 
+      font-size: $font-xl

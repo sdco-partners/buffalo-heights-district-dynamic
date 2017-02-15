@@ -9,11 +9,13 @@
   margin-bottom: 100px
 
   h1
-    margin: 40px 10% 20px 10%
+    +marg
+    margin-top: 40px
+    margin-bottom: 20px
 
   address
-	  margin-left: 10%
-	  margin-right: 10%
+    +marg
+
 
 /* OBJECTS -> For styling objects */ 
 /* Includes cosmetic styles like color, typography, and borders */
@@ -25,8 +27,15 @@
     font-size: $font-bx4
     letter-spacing: 0.1em
 
+    +min
+      font-size: $font-xl
+
   address
     @extend .font-g-b
     font-size: $font-bx1
     line-height: 2em
+    letter-spacing: 0.1em
     text-transform: uppercase
+
+    +min
+      font-size: $font-bx2
