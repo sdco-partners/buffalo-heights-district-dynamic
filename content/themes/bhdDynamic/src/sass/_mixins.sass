@@ -14,7 +14,7 @@ $break-small: 500px
     @content
 
 =min
-  @media(max-width: #{$break-small})
+  @media(min-width: #{$break-small})
     @content
 
 
@@ -32,3 +32,12 @@ $break-small: 500px
 =marg($m: 10%)
   margin-left: $m
   margin-right: $m 
+
+
+/* BROWSER DETECTION  */
+
+=browser($browsers: Mozilla)
+  @each $browser in $browsers
+    html[data-browser*="#{$browser}"] &
+      @content
+

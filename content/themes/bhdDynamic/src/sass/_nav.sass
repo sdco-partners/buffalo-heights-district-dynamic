@@ -11,6 +11,9 @@
 
   > h1
     margin-left: 30px
+    margin-top: 5px
+    +min
+      margin-top: initial
 
   > #hamburger
     width: 50px
@@ -28,6 +31,7 @@
 
   > h1 
     color: $site-darkred
-    font-size: $font-bx2
+    font-size: $font-bx1
     opacity: 0.7
-
+    +min
+      font-size: $font-bx2
