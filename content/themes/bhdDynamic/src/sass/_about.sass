@@ -21,7 +21,9 @@
 
   sup
     vertical-align: text-top
-
+  
+  blockquote
+    padding-bottom: 80px
 
 
 #sub-01
@@ -103,7 +105,13 @@
 
   .too-long
     font-size: $font-bx1
-    
+
     +min
       font-size: $font-bx4
       line-height: 0.8em
+
+  blockquote
+    background-image: url( "#{$uri}assets/shape-01.svg")
+    background-repeat: no-repeat
+    background-position: 100px 100px
+    background-size: 95% 95%
