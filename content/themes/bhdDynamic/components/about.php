@@ -39,7 +39,7 @@
 	</blockquote>
 
 	<article id="sub-03">
-	  <img class="" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-mobile.png"; ?>" alt="" />
+	  <img class="indents-at-desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-mobile.png"; ?>" alt="" />
 	  <h1>Buffalo Heights <span class="too-long">Phase I</span></h1>
 	  <p>The First phaze of Buffalo Heights is a mixed-use Project on Approximately 4 acres at th intersectio of Washington Avenue and South Heights Blvd. The project includes a new urban prototype H-E-B, multi-family, offices and retail.</p>
   </article>
