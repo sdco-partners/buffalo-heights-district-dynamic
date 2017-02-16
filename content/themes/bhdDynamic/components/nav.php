@@ -16,7 +16,7 @@
 	</div>
 	<div class="fullmenu">
 	  <div class="menu-bg">03</div>
-	  <div class="menu-link"><a href="#leasing">Leasing</a></div>
+	  <div class="menu-link"><a href="#info">Leasing</a></div>
 	</div>
 	<div class="fullmenu">
 	  <div class="menu-bg">04</div>
