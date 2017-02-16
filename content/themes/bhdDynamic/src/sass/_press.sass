@@ -8,14 +8,48 @@
 #press
   margin-top: 200px
 
+  +medium
+    margin-top: 250px
+
   > .chapter
     position: relative
     top: -120px
+
+    +medium
+      top: -180px
 
   > blockquote
     position: relative
     top: -120px
     margin-bottom: 0
+
+    +medium
+      top: -190px
+
+    > h1
+      +medium
+      margin-left: 25%
+
+    > h2
+      +medium
+      margin-left: 30%
+      margin-right: 50%
+
+    > .linkout
+      +medium
+        margin-left: 30%
+
+
+#press-section
+  +medium
+    width: 60vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
 
 .press-box
   position: relative
@@ -26,6 +60,13 @@
   +min
     width: 450px
 
+
+  +medium
+    flex: 1 0 30%;
+    margin-left: -8px;
+    margin-bottom: -8px;
+
+
   > h1
     +marg
     margin-top: 10%
@@ -35,6 +76,7 @@
 #press-img
   margin-top: -80px
   z-index: -1
+
 
 #sub-03
 
