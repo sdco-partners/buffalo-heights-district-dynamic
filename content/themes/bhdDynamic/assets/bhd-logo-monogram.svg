@@ -1,8 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.12 364.08">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.16 364.08">
 	<defs>
 		<style>
-			.bg-svg{fill:none;stroke:#48484F;stroke-miterlimit:10;stroke-width:18.77px;}
+			.mono-1{}.mono-2{}.mono-3{fill:none;stroke:#48484F;stroke-miterlimit:10;stroke-width:18.77px;}
 		</style>
 	</defs>
-	<path id="bhd-mono" class="bg-svg" d="M60.06,50.9V313.41h50.67a76,76,0,0,0,76-76h0a76,76,0,0,0-76-76h0a76,76,0,0,0,76-76h0a76,76,0,0,0-76-76H9.38V364.08h0"/>
+	<path id="B" class="mono-3" d="M60.06,50.9V313.41h50.67a76,76,0,0,0,76-76h0a76,76,0,0,0-76-76h0a76,76,0,0,0,76-76h0a76,76,0,0,0-76-76H9.38V364.08h0"/>
+	<line id="I" class="mono-3" x1="244.77" y1="50.9" x2="244.77" y2="364.08"/>
+	<line id="D" class="mono-3" x1="120.9" y1="161" x2="244.77" y2="161"/>
 </svg>

@@ -7,32 +7,81 @@
 #foot
   padding-bottom: 150px
 
+  +medium
+    +frow
+
   header
+    margin-left: auto
+    margin-right: auto
+
+    +medium
+      flex: 0 0 auto
+      order: 2
 
     > p 
       padding-top: 100px
       width: 150px
-      margin-left: auto
-      margin-right: auto
       margin-bottom: 20px
+
+      +medium
+        width: 100px
+        padding-top: 50px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 0
 
   h1, h2
     +marg
 
+    +medium
+      margin-left: 0
+      margin-right: 0
+
   h1
     margin-bottom: 100px
 
+    +medium
+      margin-bottom: 50px
+      margin-right: 0
+
   h2
     margin-bottom: 20px
+
+#footer-social
+
+  +medium
+    flex: 0 0 auto
+    order: 2
+    display: flex;
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    flex-direction: column
+    margin-top: 100px
+    margin-right: 10%
+
 
 #footer-links
   +frow
   width: 250px
   margin: 100px auto 100px
 
+  +medium
+    flex: 0 0 auto
+    order: 1
+    margin: 50px auto 0
+
 .links
     svg
       width: 60px
+
+#footer-info
+
+  +medium
+    flex: 0 0 auto
+    order: 1
+    margin-top: 100px
+    margin-left: 15%
 
 
 /* OBJECTS -> For styling objects */ 
@@ -45,6 +94,10 @@
   background-position: 50% 300px
   background-size: 80% 80%
   background-color: $site-black
+
+  +medium
+    background-position: -578% 70px;
+    background-size: 95% 95%;
   
   header
     color: $site-white
@@ -56,14 +109,23 @@
       letter-spacing: 0.1em
       text-align: center
       font-size: $font-body
+      
+      +medium
+        font-size: $font-small
 
       > span 
         @extend .font-hs-i
         text-transform: initial
         font-size: $font_bx2
 
+        +medium
+          font-size: $font-body
+
     > .underbar
       border-width: 4px
+
+      +medium
+        border-width: 2px
 
   h1
     font-size: $font-bx1
@@ -71,8 +133,14 @@
     color: $site-white
     text-transform: uppercase
 
+    +medium
+      font-size: $font-sx2
+
 
   h2
     color: $site-red
     letter-spacing: 0.2em
     text-transform: uppercase
+
+    +medium
+      font-size: $font-sx1
