@@ -15,13 +15,6 @@
         margin-top: 10px
         margin-bottom: 15px
 
-    > p
-      +marg
-      margin-bottom: 60px
-
-      +medium
-        margin-left: 40%
-        margin-right: 30%
 
   sup
     vertical-align: text-top
@@ -41,6 +34,14 @@
       margin-left: 25%
       margin-top: -39px
 
+  p 
+    +marg
+    margin-bottom: 60px
+
+    +medium
+      margin-left: 40%
+      margin-right: 30%
+
     > .fits
       margin-left: -4px
 
@@ -57,7 +58,8 @@
 
   > p
       +medium
-        margin-left: 46% !important
+        margin-left: 46%
+        margin-right: 30%
 
   #desktop
     display: none
@@ -73,19 +75,19 @@
 
 #sub-03
 
-  h1
+  > h1
     +marg
     margin-top: 60px
     margin-bottom: 60px
 
     +medium
-      margin-left: 15% !important
-      margin-right: 50% !important
+      margin-left: 15% 
+      margin-right: 50% 
 
-  p
+  > p
     +medium
-      margin-left: 45% !important
-      margin-right: 28% !important
+      margin-left: 45% 
+      margin-right: 28% 
       margin-top: -100px
 
     .fits
@@ -190,6 +192,10 @@
     background-repeat: no-repeat
     background-position: 100px 100px
     background-size: 95% 95%
+
+    +medium
+      background-position: 104px 21px
+      background-size: 125% 125%
 
 
 #about-slider-nav
