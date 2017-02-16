@@ -19,7 +19,7 @@
     <button id="prev">Previous</button>
     <button id="next">Next</button>
   </div>
-  
+
   <div id="about-slider-01">
 		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
 		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
@@ -27,7 +27,8 @@
 	</div>
 
 	<article id="sub-02">
-		<img class="indented-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
+		<img class="indented-img" id="mobile" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
+		<img class="indented-img" id="desktop" src="<?php echo $GLOBALS['url']."/assets/img-01-desktop.png"; ?>" alt="" />
 		<h1><span class="fits">1500<sup>+</sup></span> Acres of urban parkland</h1>
 		<p>This innovative real estate development will offer a complete lifestye built around outdoor activity, healthy local food, and signature greenspace in the region's most desirable and accessible urban infill location. New development and upgrades to existing buildings will enhance proximity to the trails and bayou, and more than 1,500 acres of parkland in the urban core of the city</p>
   </article>

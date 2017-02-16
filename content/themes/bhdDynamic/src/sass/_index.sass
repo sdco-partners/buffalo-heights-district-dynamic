@@ -10,8 +10,16 @@ blockquote
     margin-top: 60px
     margin-bottom: 30px
 
+    +medium
+      margin-left: 20%
+      margin-right: 35%
+
   > h2
     margin: 30px 40% 30px 10%
+
+    +medium
+      margin-left: 26%
+      margin-right: 56%
 
 
 .chapter
@@ -44,6 +52,13 @@ blockquote
   margin-top: 60px
   margin-bottom: 30px
   width: 80vw
+
+  +medium
+    position: relative
+    margin-left: 15%
+    margin-top: -40px
+    width: 350px
+    z-index: 10
   
 
 /* OBJECTS -> For styling objects */
@@ -58,10 +73,16 @@ blockquote
     letter-spacing: 0.1em
     line-height: 1.2em
 
+    +medium
+      font-size: $font-xlx1
+
   > h2
     font-size: $font-bx1
     letter-spacing: 0.2em
     line-height: 1.5em
+
+    +medium
+      font-size: $font-sx2
 
 
 .chapter
