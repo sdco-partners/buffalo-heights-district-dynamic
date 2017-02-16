@@ -21,7 +21,7 @@
 
       +medium
         margin-left: 40%
-        margin-right: 20%
+        margin-right: 30%
 
   sup
     vertical-align: text-top
@@ -38,7 +38,7 @@
     margin-bottom: 30px
 
     +medium
-      margin-left: 21%
+      margin-left: 25%
       margin-top: -39px
 
     > .fits
@@ -81,9 +81,40 @@
   width: 100vw
   overflow: scroll
 
+  +medium
+    +marg
+    width: calc(100vw - 20%)
 
 .about-slider-img
   flex: 0 0 100%
+
+
+#about-slider-nav
+  display: none
+
+  +medium
+    display: block
+    width: 100%
+
+  > button
+    width: 200px
+    height: 35px
+    position: relative
+
+  #prev
+    +medium
+      top: 500px
+      margin-left: 10%
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+
+  #next
+    +medium
+      top: 260px
+      margin-left: 90%
+      transform: rotate(90deg);
+      transform-origin: left top 0;
+
 
 
 /* OBJECTS -> For styling objects */
@@ -127,3 +158,18 @@
     background-repeat: no-repeat
     background-position: 100px 100px
     background-size: 95% 95%
+
+
+#about-slider-nav
+  > button
+    background-color: $site-red
+    color: $site-white
+    border: none
+    text-transform: uppercase
+    letter-spacing: .2em
+
+    &:hover
+      background-color: $site-black
+      color: $site-red
+      opacity: 0.9
+

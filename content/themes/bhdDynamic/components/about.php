@@ -14,7 +14,12 @@
   <div id="hear-houston">
 	  <?php echo file_get_contents($GLOBALS['url']."/assets/heart-houston.svg"); ?>
   </div>
-
+  
+  <div id="about-slider-nav">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+  
   <div id="about-slider-01">
 		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
 		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
