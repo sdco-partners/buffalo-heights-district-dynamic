@@ -10,9 +10,8 @@
   padding-top: 20px
 
   +medium
-    +frow(flex, space-between, center, wrap)
-    padding-left: 200px
-    padding-right: 200px
+    height: 46px
+    padding-top: 10px
 
   > h1
     margin-left: 30px
@@ -33,37 +32,35 @@
     +medium
       display: none
 
-  > .fullmenu
-    display: none
+.fullmenu
 
-    +medium
-      display: block
-      flex: 0 0 100px
-      padding-top: 5px
+  +medium
+    display: block
+    flex: 0 0 25%
+    padding-top: 5px
 
-    a 
+  a 
 
-    &:after
-      position: relative
-      right: 50%
-      top: -10px 
-      line-height: 0
+  &:after
+    position: relative
+    right: 50%
+    top: -10px 
+    line-height: 0
 
-// #nav-01
-//   &:hover:after
+.menu-link
+  position: relative
+  top: -26px
+  right: 4px
 
+#fullmenu
+  display: none
 
-// #nav-02
-//   &:hover:after
+  +medium
+    +frow(flex, center, center, wrap)
+    width: 550px
+    margin-left: auto
+    margin-right: auto
 
-
-
-// #nav-03
-//   &:hover:after
-
-
-// #nav-04
-//   &:hover:after
 
 
 
@@ -82,7 +79,20 @@
     +min
       font-size: $font-bx2
 
-  > .fullmenu
+  .menu-bg 
+    @extend .font-g-b
+    color: $site-red
+    font-size: $font-bx4
+    text-transform: uppercase
+    letter-spacing: 0.2em
+    text-align: center
+
+    &:hover
+      color: $site-darkred
+      opacity: 0.7
+
+  .menu-link
+    text-align: center
 
     > a 
       @extend .font-hs-b
@@ -90,12 +100,8 @@
       font-size: $font-sx2
       letter-spacing: 0.2em
       text-transform: uppercase
-  
-  > .chapter-bg 
-      color: $site-darkred
-      font-size: $font-sx2
-      text-transform: uppercase
-      letter-spacing: 0.2em   
+
+
 
 
 

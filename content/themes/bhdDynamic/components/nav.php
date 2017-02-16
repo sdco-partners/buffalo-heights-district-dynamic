@@ -5,20 +5,22 @@
 ?>
 
 <h1>Buffalo Heights</h1>
-<div class="fullmenu">
-  <a href="#about">About</a>
-  <div class="chapter-bg">01</div>
-</div>
-<div class="fullmenu">
-  <a href="#press">Press</a>
-  <div class="chapter-bg">02</div>
-</div>
-<div class="fullmenu">
-  <a href="#leasing">Leasing</a>
-  <div class="chapter-bg">03</div>
-</div>
-<div class="fullmenu">
-  <a href="#connect">Connect</a>
-  <div class="chapter-bg">04</div>
+<div id="fullmenu">
+	<div class="fullmenu">
+	  <div class="menu-bg">01</div>
+	  <div class="menu-link"><a href="#about">About</a></div>
+	</div>
+	<div class="fullmenu">
+	  <div class="menu-bg">02</div>
+    <div class="menu-link"><a href="#press">Press</a></div>
+	</div>
+	<div class="fullmenu">
+	  <div class="menu-bg">03</div>
+	  <div class="menu-link"><a href="#leasing">Leasing</a></div>
+	</div>
+	<div class="fullmenu">
+	  <div class="menu-bg">04</div>
+	  <div class="menu-link"><a href="#connect">Connect</a></div>
+	</div>
 </div>
 <div id="hamburger"><?php echo file_get_contents($GLOBALS['url']."/assets/hamburger.svg"); ?></div>
