@@ -21,9 +21,9 @@
   </div>
 
   <div id="about-slider-01">
-		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
-		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
-		<img class="about-slider-img" id="" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+		<img class="about-slider-img" id="about-01" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+		<img class="about-slider-img" id="about-02" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+		<img class="about-slider-img" id="about-03" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
 	</div>
 
 	<article id="sub-02">
