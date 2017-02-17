@@ -36,7 +36,7 @@
 
 	<blockquote>
 		<h1>There is no location like this one in Houston</h1>
-		<h2>Russel Gordy Owner of BKR Memorial II, LLC</h2>
+		<h2>Russel Gordy<br>Owner of BKR Memorial II, LLC</h2>
 	</blockquote>
 
 	<article id="sub-03">
