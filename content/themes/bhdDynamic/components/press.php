@@ -41,4 +41,5 @@
     <div class="linkout"><a href="#" alt="">Read More</a></div>
   </article>
 </div>
-<img class="" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
+<img class="mobile" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
+<img class="desktop" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-desktop.png"; ?>" alt="" />

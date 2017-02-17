@@ -20,15 +20,16 @@
     <button id="next">Next</button>
   </div>
 
-  <div id="about-slider-01">
-		<img class="about-slider-img" id="about-01" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
-		<img class="about-slider-img" id="about-02" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
-		<img class="about-slider-img" id="about-03" src="<?php echo $GLOBALS['url']."/assets/img-02-mobile.png"; ?>" alt="" />
+  <div id="about-slider-01" class="">
+		<img class="about-slider-img" id="about-01" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
+		<img class="about-slider-img" id="about-02" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
+		<img class="about-slider-img" id="about-03" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
 	</div>
 
+
 	<article id="sub-02">
-		<img class="indented-img" id="mobile" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
-		<img class="indented-img" id="desktop" src="<?php echo $GLOBALS['url']."/assets/img-01-desktop.png"; ?>" alt="" />
+		<img class="indented-img mobile" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
+		<img class="indented-img desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-desktop.png"; ?>" alt="" />
 		<h1><span class="fits">1500<sup>+</sup></span> Acres of urban parkland</h1>
 		<p>This innovative real estate development will offer a complete lifestye built around outdoor activity, healthy local food, and signature greenspace in the region's most desirable and accessible urban infill location. New development and upgrades to existing buildings will enhance proximity to the trails and bayou, and more than 1,500 acres of parkland in the urban core of the city</p>
   </article>
@@ -39,7 +40,8 @@
 	</blockquote>
 
 	<article id="sub-03">
-	  <img class="indents-at-desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-mobile.png"; ?>" alt="" />
+	  <img class="indents-at-desktop mobile" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-mobile.png"; ?>" alt="" />
+	  <img class="indents-at-desktop desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-desktop.png"; ?>" alt="" />
 	  <h1>Buffalo Heights <span class="too-long">Phase I</span></h1>
 	  <p>The First phaze of Buffalo Heights is a mixed-use Project on Approximately 4 acres at th intersectio of Washington Avenue and South Heights Blvd. The project includes a new urban prototype H-E-B, multi-family, offices and retail.</p>
   </article>

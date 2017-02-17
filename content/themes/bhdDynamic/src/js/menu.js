@@ -23,7 +23,10 @@ $j( '#close-menu' ).on( 'click', function(){
   })
 });
 
-$j( '.fullmenu' ).on( 'click', function(){
-  $j( '#fullmenu' ).fadeOut(1000, function(){
-  })
-});
+if ( window.screen.width < 850 ) {
+	$j( '.fullmenu' ).on( 'click', function(){
+	  $j( '#fullmenu' ).fadeOut(1000, function(){
+	  })
+	});
+	
+}

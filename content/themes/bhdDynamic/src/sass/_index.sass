@@ -65,6 +65,18 @@ blockquote
   +medium
     +marg
     width: calc(100vw - 20%)
+
+.mobile
+  display: block
+
+  +medium
+    display: none
+
+.desktop
+  display: none
+
+  +medium
+    display: block
   
 
 /* OBJECTS -> For styling objects */
@@ -95,7 +107,7 @@ blockquote
   @extend .font-g-b
   color: $site-red
   font-size: $font-bx3
-  letter-spacing: 0.3em
+  letter-spacing: 0.15em
 
 
 .dash
