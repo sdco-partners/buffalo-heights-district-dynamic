@@ -14,12 +14,18 @@
 
 $j( '#watch' ).on( 'click', function(){
   $j( '#popup-video' ).fadeIn(500, function(){
-  	console.log("load video");
   })
 });
 
 $j( '#close-popup' ).on( 'click', function(){
   $j( '#popup-video' ).fadeOut(500, function(){
-  	console.log("load video");
   })
 });
+
+
+/**
+* Video Player
+* 
+* Youtube video player
+*/
+
