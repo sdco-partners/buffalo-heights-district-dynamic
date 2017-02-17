@@ -12,47 +12,56 @@
 * Functionality of About Slider
 */
 
-var aboutSlider = function(){
+var aboutSlider = {}
+aboutSlider.counter = 1;
+aboutSlider.slideFxn = function(time, count) {
 
-var counter = 1;
+  // Define vocab
+  var totalImages = $j( '#about-slider-01' ).children().length
+  var firstPosition = $j( '#about-01' ).position().left;
 
-  var slide = function(time, count) {
-    // Define vocab
-    var totalImages = $j( '#about-slider-01' ).children().length
-    var firstPosition = $j( '#about-01' ).position().left;
-
-    // If count is within image range, account for indent image and use to move left
-    if ( count <= totalImages ) {
-
-      var currentSlide = $j( '#about-0' + count );
-      var currentPosition = currentSlide.position().left;
-      var currentWidth = currentSlide.width()
-      
-      var moveTo = currentPosition - firstPosition
-      
-      $j( '#about-slider-01' ).animate({
-        scrollLeft: moveTo
-      }, time / 2 );
+  // If count is within image range, account for indent image and use to move left
+  if ( aboutSlider.counter <= totalImages && aboutSlider.counter > 0 ) {
     
-    // Else it's end of slider, reset to initial
-    } else {
-      counter = 1;
-      $j( '#about-slider-01' ).animate({
-        scrollLeft: 0 
-      }, time );
-    }
+    console.log("triggers on normal: ", aboutSlider.counter);
+    var nextSlide = $j( '#about-0' + aboutSlider.counter );
+    var nextPosition = nextSlide.position().left;
+    var moveTo = nextPosition - firstPosition
+    
+    $j( '#about-slider-01' ).animate({
+      scrollLeft: moveTo
+    }, time / 2 );
+  
+  // If going in reverse and the count falls below 0
+  } else if ( aboutSlider.counter < 1 ){
+    
+    aboutSlider.counter = totalImages;
+    console.log("triggers on 0: ", aboutSlider.counter);
+    var nextSlide = $j( '#about-0' + aboutSlider.counter );
+    var nextPosition = nextSlide.position().left; 
+    var moveTo = nextPosition - firstPosition
 
+    $j( '#about-slider-01' ).animate({
+      scrollLeft: moveTo 
+    }, time );
+    
+  // Else it's end of slider, r eset to initial
+  } else {
+    aboutSlider.counter = 1;
+    console.log("triggers on else: ", aboutSlider.counter);
+    $j( '#about-slider-01' ).animate({
+      scrollLeft: 0 
+    }, time );
   }
-
-  $j( '#next' ).on( 'click', function(){
-    counter += 1;
-    console.log('count is at: ', counter);
-    slide(2000, counter);
-  });
-
-  $j( '#prev' ).on( 'click', function(){
-    counter -= 1;
-    console.log('count is at: ', counter);
-    slide(2000, counter);
-  });
 }
+
+$j( '#next' ).on( 'click', function(){
+  aboutSlider.counter++;
+  aboutSlider.slideFxn(2000);
+});
+
+$j( '#prev' ).on( 'click', function(){
+  aboutSlider.counter--;
+  aboutSlider.slideFxn(2000);
+});
+
