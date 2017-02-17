@@ -12,16 +12,9 @@
 
 <div id="popup-video">
   <a id="close-popup" href="#"><?php echo file_get_contents($GLOBALS['url']."/assets/close-bttn.svg"); ?></a>
-	<iframe 
-	  id="ytplayer" 
-	  type="text/html" 
-	  width="100%" 
-	  height="860px"
-    src="https://www.youtube.com/embed/NDQCxIrADZc?autoplay=1&controls=0&enablejsapi=1&fs=0&loop=1&modestbranding=1&rel=0&start=2&iv_load_policy=3"
-    frameborder="0" 
-    allowfullscreen>
-	 </iframe>
-
+  <div id="loading"></div>
+  <div id="video-box">
+  </div>
 
 </div>
 
