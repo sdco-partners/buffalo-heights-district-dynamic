@@ -144,3 +144,26 @@
 
     +medium
       font-size: $font-sx1
+
+    a 
+      color: $site-red
+      transition: border 0.2s, color 0.5s
+
+      &:hover
+        color: $site-white
+        border-bottom: 8px solid $site-white
+ 
+.links
+
+  svg
+    .circle
+      transition: stroke 0.5s
+    .icon
+      transition: fill 0.5s
+
+    &:hover
+      .circle
+        stroke: $site-red
+      .icon
+        fill: $site-red
+
