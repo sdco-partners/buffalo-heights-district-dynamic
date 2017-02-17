@@ -13,7 +13,8 @@ $j( window ).scroll(function(){
 	* 
 	* Makes nav sticky after x scroll height
   */
- 
+  console.log( $j( window ).scrollTop() );
+
 	if( $j( window ).scrollTop() > 900 ){
 	  $j( '#nav' ).addClass( 'nav-sticky' );
 	}
@@ -28,25 +29,25 @@ $j( window ).scroll(function(){
 	* Fades the section number behind the link
   */
 
-  if( $j( window ).scrollTop() > 900 && $j( window ).scrollTop() <= 4170 ){
+  if( $j( window ).scrollTop() > 296 && $j( window ).scrollTop() <= 3385 ){
 		$j( '#menu-01' ).css("color", "rgba(193, 74, 54, 0.5)");
 	}else{
 		$j( '#menu-01' ).css("color", "#EC5A4F");
 	}
 
-  if( $j( window ).scrollTop() > 4170 && $j( window ).scrollTop() <= 6252 ){
+  if( $j( window ).scrollTop() > 3385 && $j( window ).scrollTop() <= 5080 ){
 		$j( '#menu-02' ).css("color", "rgba(193, 74, 54, 0.5)");
 	}else{
 		$j( '#menu-02' ).css("color", "#EC5A4F");
 	}
 
-  if( $j( window ).scrollTop() > 6252 && $j( window ).scrollTop() <= 6710 ){
+  if( $j( window ).scrollTop() > 5080 && $j( window ).scrollTop() <= 5504 ){
 		$j( '#menu-03' ).css("color", "rgba(193, 74, 54, 0.5)");
 	}else{
 		$j( '#menu-03' ).css("color", "#EC5A4F");
 	}
 
-  if( $j( window ).scrollTop() > 6710 ){
+  if( $j( window ).scrollTop() > 5504 ){
 		$j( '#menu-04' ).css("color", "rgba(193, 74, 54, 0.5)");
 	}else{
 		$j( '#menu-04' ).css("color", "#EC5A4F");
