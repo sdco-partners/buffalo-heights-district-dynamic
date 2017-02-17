@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.16 22.16">
+	<defs>
+		<style>.close-1{fill:none;stroke:#4e4e56;stroke-linejoin:round;stroke-width:3.78px;}
+		</style>
+	</defs>
+	<line class="close-1" x1="1.34" y1="1.34" x2="20.82" y2="20.82"/>
+	<line class="close-1" x1="20.82" y1="1.34" x2="1.34" y2="20.82"/>
+</svg>
