@@ -29,9 +29,9 @@ $j( '#close-popup' ).on( 'click', function(){
 
 
 /**
-* Video Player
+* XX Video Player XX
 * 
-* Youtube video player
+* Youtube video player .. non functional ...
 */
 
 var player;

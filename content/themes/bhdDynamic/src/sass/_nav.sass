@@ -36,11 +36,15 @@
       display: none
 
 .fullmenu
+  margin-top: 7.5px
+  margin-bottom: 7.5px
 
   +medium
     display: block
     flex: 0 0 25%
     padding-top: 5px
+    margin-top: 0
+    margin-bottom: 0
 
   a 
 
@@ -57,10 +61,20 @@
 
 #fullmenu
   display: none
+  position: fixed
+  top: 0
+  width: 100vw
+  height: 100vh
+  background-color: $site-red
+  padding-top: 40%
+  z-index: 80
 
   +medium
+    position: initial
     +frow(flex, center, center, wrap)
     width: 550px
+    height: 40px
+    padding-top: 5px
     margin-left: auto
     margin-right: auto
 
@@ -71,7 +85,16 @@
   left: 0
   z-index: 80
 
+#close-menu
+  position: absolute
+  top: 30px
+  right: 30px
+  svg 
+    width: 25px
+    height: 25px
 
+  +medium
+    display: none
 
 
 /* OBJECTS -> For styling objects */
@@ -92,7 +115,7 @@
   .menu-bg 
     @extend .font-g-b
     color: $site-red
-    font-size: $font-bx4
+    font-size: $font-xlx1
     text-transform: uppercase
     letter-spacing: 0.2em
     text-align: center
@@ -101,19 +124,24 @@
       color: $site-darkred
       opacity: 0.7
 
+    +medium
+      font-size: $font-bx4
+
   .menu-link
     text-align: center
 
     > a 
       @extend .font-hs-b
       color: $site-white
-      font-size: $font-sx2
+      font-size: $font-bx1
       letter-spacing: 0.2em
       text-transform: uppercase
 
+      +medium
+        font-size: $font-sx2
 
-
-
-
+#close-menu
+  .close-1
+    stroke: $site-white
 
 
