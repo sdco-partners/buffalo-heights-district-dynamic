@@ -24,6 +24,7 @@
 <button class="head-text" id="watch">Watch Video</button>
 
 <div class="video-container">
+  <div id="overlay"></div>
 	<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">
 	</video>
 </div>

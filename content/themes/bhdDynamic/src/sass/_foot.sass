@@ -109,6 +109,7 @@
       letter-spacing: 0.1em
       text-align: center
       font-size: $font-body
+      line-height: 2em
       
       +medium
         font-size: $font-small
@@ -147,12 +148,21 @@
 
     a 
       color: $site-red
-      transition: border 0.2s, color 0.5s
+      border-bottom: none
+      transition: color 0.5s
 
       &:hover
         color: $site-white
-        border-bottom: 8px solid $site-white
+
  
+#midway-link
+  color: $site-white
+  transition: color 0.5s
+
+  &:hover 
+    color: $site-red
+
+
 .links
 
   svg
@@ -166,4 +176,3 @@
         stroke: $site-red
       .icon
         fill: $site-red
-

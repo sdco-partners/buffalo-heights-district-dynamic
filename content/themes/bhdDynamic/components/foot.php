@@ -22,7 +22,7 @@
   </div>
   <div>
     <h2>Developer</h2>
-    <h1>Midway</h1>
+    <h1><a id="midway-link" href="http://midwaycompanies.com/" alt="Midway" target="_blank">Midway</a></h1>
   </div>
   <div>
     <h2>Copyright 2017 Buffalo Heights</h2>
