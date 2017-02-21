@@ -13,7 +13,7 @@
 <div id="popup-video">
   <a id="close-popup" href="#"><?php echo file_get_contents($GLOBALS['url']."/assets/close-bttn.svg"); ?></a>
 	<div class="video-container">
-		<video autoplay loop mute src="<?php echo $GLOBALS['url']."/assets/video-02.mp4"; ?>">
+		<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-02.mp4"; ?>">
 		</video>
 	</div> 
 </div>
@@ -25,7 +25,7 @@
 <button id="watch">Watch Video</button>
 
 <div class="video-container">
-	<video autoplay loop mute src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">
+	<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">
 	</video>
 </div>
 
