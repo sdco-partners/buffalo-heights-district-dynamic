@@ -9,7 +9,7 @@
 	<h1>Quote from article quote from Article</h1>
 	<h2>Houston Chronicle<br>
 	January 2017</h2>
-  <div class="linkout"><a href="#" alt="">Read More</a></div>
+  <div class="linkout"><a href="http://www.designsponge.com/2011/06/houston-design-guide.html" target="_blank" alt="press">Read More</a></div>
 </blockquote>	
 <div id="press-section">
   <article class="press-box">
@@ -17,28 +17,28 @@
       Houston Chronicle<br>
       January 2017
     </h1>
-    <div class="linkout"><a href="#" alt="">Read More</a></div>
+    <div class="linkout"><a href="http://www.designsponge.com/2011/06/houston-design-guide.html" target="_blank" alt="press">Read More</a></div>
   </article>
   <article class="press-box">
     <h1>
       Houston Chronicle<br>
       January 2017
     </h1>
-    <div class="linkout"><a href="#" alt="">Read More</a></div>
+    <div class="linkout"><a href="http://www.designsponge.com/2011/06/houston-design-guide.html" target="_blank" alt="press">Read More</a></div>
   </article>
   <article class="press-box">
     <h1>
       Houston Chronicle<br>
       January 2017
     </h1>
-    <div class="linkout"><a href="#" alt="">Read More</a></div>
+    <div class="linkout"><a href="http://www.designsponge.com/2011/06/houston-design-guide.html" target="_blank" alt="press">Read More</a></div>
   </article>
   <article class="press-box">
     <h1>
       Houston Chronicle<br>
       January 2017
     </h1>
-    <div class="linkout"><a href="#" alt="">Read More</a></div>
+    <div class="linkout"><a href="http://www.designsponge.com/2011/06/houston-design-guide.html" target="_blank" alt="press">Read More</a></div>
   </article>
 </div>
 <img class="mobile" id="press-img" src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
