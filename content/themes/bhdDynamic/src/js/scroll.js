@@ -8,12 +8,14 @@
 
 $j( window ).scroll(function(){
 
+  console.log( $j( window ).scrollTop() );
+
+
   /**
 	* Sticky Nav
 	* 
 	* Makes nav sticky after x scroll height
   */
-  console.log( $j( window ).scrollTop() );
 
 	if( $j( window ).scrollTop() > 900 ){
 	  $j( '#nav' ).addClass( 'nav-sticky' );
@@ -55,4 +57,30 @@ $j( window ).scroll(function(){
 
 });
 
+
+/**
+* Smooth Section Scrolling
+*  
+* Scrolls down to section smoother
+*/
+
+$j( '#nav-about' ).on('click', function(e){
+  e.preventDefault();
+  $j( 'html,body' ).animate({"scrollTop": 900}, 'slow', 'swing');
+}) 
+
+$j( '#nav-press' ).on('click', function(e){
+  e.preventDefault();
+  $j( 'html,body' ).animate({"scrollTop": 3831}, 'slow', 'swing');
+}) 
+
+$j( '#nav-leasing' ).on('click', function(e){
+  e.preventDefault();
+  $j( 'html,body' ).animate({"scrollTop": 5350}, 'slow', 'swing');
+}) 
+
+$j( '#nav-connect' ).on('click', function(e){
+  e.preventDefault();
+  $j( 'html,body' ).animate({"scrollTop": 5777}, 'slow', 'swing');
+}) 
 

@@ -65,3 +65,10 @@ $j( '#prev' ).on( 'click', function(){
   aboutSlider.slideFxn(2000);
 });
 
+
+/**
+* About Slider
+* 
+* Functionality of About Slider
+*/
+
