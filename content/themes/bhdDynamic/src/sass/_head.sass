@@ -7,19 +7,27 @@
 
 #head
   color: $site-white
-  height: 80vh
+  height: 650px
 
   +medium
     height: 900px
 
+  h1, h2
+    position: relative
+    z-index: 10
+
   header
     height: 35px
     padding-top: 5px
+    position: relative
+    z-index: 10
 
   #head-seal
     width: 75px
     height: 75px
     margin: 50px auto 25px
+    position: relative
+    z-index: 10
 
     +medium
       margin: 250px auto 25px
@@ -28,11 +36,15 @@
     display: block
     margin: 40px auto 0
     padding: 20px 60px
+    position: relative
+    z-index: 10
 
 #popup-video
   display: none
   width: 100vw
   height: 860px
+  position: relative
+  z-index: 10
 
 #loading
   position: absolute
@@ -40,14 +52,32 @@
   right: 0
   width: 100vw
   height: 900px
+  z-index: 10
 
 #close-popup
   position: absolute
   top: 60px
   right: 30px
+  z-index: 10
   svg 
     width: 25px
     height: 25px
+
+.video-container 
+  position: absolute
+  top: 0
+  left: 0
+  height: 650px
+  width: 100%
+  overflow: hidden
+
+  +medium
+    height: 900px
+
+  video 
+    min-width: 100%
+    min-height: 100%
+    z-index: 1
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */

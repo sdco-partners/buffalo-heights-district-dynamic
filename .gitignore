@@ -67,3 +67,6 @@ content/upgrade/
 content/wp-cache-config.php
 
 /vendor/
+
+# ignore BIG files
+*.mp4

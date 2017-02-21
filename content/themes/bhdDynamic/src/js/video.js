@@ -13,17 +13,14 @@
 */
 
 $j( '#watch' ).on( 'click', function(){
-	$j('#video-box').html('<iframe id="ytplayer" type="text/html" width="1529px" height="860px" src="https://www.youtube.com/embed/NDQCxIrADZc?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>');
+	// $j('#video-box').html("<video id='video-2' autoplay mute src='<?php echo $GLOBALS['url'].'/assets/video-02.mp4'; ?>'></video>");
   $j( '#popup-video' ).fadeIn(500, function(){
-  	$j( '#loading' ).fadeOut(2200, function(){
-
-  	})
   })
 });
 
 $j( '#close-popup' ).on( 'click', function(){
   $j( '#popup-video' ).fadeOut(500, function(){
-  	$j('#ytplayer').remove();
+  	// $j('#video-2').remove();
   })
 });
 
@@ -34,18 +31,18 @@ $j( '#close-popup' ).on( 'click', function(){
 * Youtube video player .. non functional ...
 */
 
-var player;
+// var player;
 
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('ytplayer', {
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
-}
+// function onYouTubeIframeAPIReady() {
+//     player = new YT.Player('ytplayer', {
+//         events: {
+//             'onReady': onPlayerReady
+//         }
+//     });
+// }
 
-function onPlayerReady(event) {
-    player.mute();
-    player.playVideo();
-}
+// function onPlayerReady(event) {
+//     player.mute();
+//     player.playVideo();
+// }
 
