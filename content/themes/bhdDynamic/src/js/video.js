@@ -13,14 +13,20 @@
 */
 
 $j( '#watch' ).on( 'click', function(){
-	// $j('#video-box').html("<video id='video-2' autoplay mute src='<?php echo $GLOBALS['url'].'/assets/video-02.mp4'; ?>'></video>");
   $j( '#popup-video' ).fadeIn(500, function(){
+  	$j( '.head-text' ).fadeOut('fast', function(){
+  		var video = document.getElementById("full-video"); 
+      video.play();
+  	})
   })
 });
 
 $j( '#close-popup' ).on( 'click', function(){
   $j( '#popup-video' ).fadeOut(500, function(){
-  	// $j('#video-2').remove();
+  	$j( '.head-text' ).fadeIn('fast', function(){
+  		var video = document.getElementById("full-video"); 
+      video.pause();
+  	})
   })
 });
 
