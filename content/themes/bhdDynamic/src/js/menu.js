@@ -30,3 +30,16 @@ if ( window.screen.width < 850 ) {
 	  })
 	});
 }
+
+/**
+* Nav hover
+* 
+* Animates fade in on hover
+*/
+
+$j( '.menu-link' )
+  .mouseenter(function(){
+	  $j(this).prev().css("color", "rgba(193, 74, 54, 0.7)");
+  }).mouseleave(function(){
+	  $j(this).prev().css("color", "rgba(193, 74, 54, 0.0)");
+})

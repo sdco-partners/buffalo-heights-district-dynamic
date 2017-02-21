@@ -32,25 +32,25 @@ $j( window ).scroll(function(){
   */
 
   if( $j( window ).scrollTop() > 296 && $j( window ).scrollTop() <= 3385 ){
-		$j( '#menu-01' ).css("color", "rgba(193, 74, 54, 0.5)");
+		$j( '#menu-01' ).css("color", "rgba(193, 74, 54, 0.7)");
 	}else{
 		$j( '#menu-01' ).css("color", "#EC5A4F");
 	}
 
   if( $j( window ).scrollTop() > 3385 && $j( window ).scrollTop() <= 5080 ){
-		$j( '#menu-02' ).css("color", "rgba(193, 74, 54, 0.5)");
+		$j( '#menu-02' ).css("color", "rgba(193, 74, 54, 0.7)");
 	}else{
 		$j( '#menu-02' ).css("color", "#EC5A4F");
 	}
 
   if( $j( window ).scrollTop() > 5080 && $j( window ).scrollTop() <= 5504 ){
-		$j( '#menu-03' ).css("color", "rgba(193, 74, 54, 0.5)");
+		$j( '#menu-03' ).css("color", "rgba(193, 74, 54, 0.7)");
 	}else{
 		$j( '#menu-03' ).css("color", "#EC5A4F");
 	}
 
   if( $j( window ).scrollTop() > 5504 ){
-		$j( '#menu-04' ).css("color", "rgba(193, 74, 54, 0.5)");
+		$j( '#menu-04' ).css("color", "rgba(193, 74, 54, 0.7)");
 	}else{
 		$j( '#menu-04' ).css("color", "#EC5A4F");
 	}
@@ -83,4 +83,7 @@ $j( '#nav-connect' ).on('click', function(e){
   e.preventDefault();
   $j( 'html,body' ).animate({"scrollTop": 5777}, 'slow', 'swing');
 }) 
+
+
+
 
