@@ -8,7 +8,7 @@
 
 $j( window ).scroll(function(){
 
-  console.log( $j( window ).scrollTop() );
+  // console.log( $j( window ).scrollTop() );
 
 
   /**

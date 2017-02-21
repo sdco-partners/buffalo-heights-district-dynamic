@@ -13,12 +13,13 @@
 */
 
 $j( '#hamburger' ).on( 'click', function(e){
-  e.preventDefault()
+  e.preventDefault();
   $j( '#fullmenu' ).fadeIn(500, function(){
   })
 });
 
-$j( '#close-menu' ).on( 'click', function(){
+$j( '#close-menu' ).on( 'click', function(e){
+	e.preventDefault();
   $j( '#fullmenu' ).fadeOut(500, function(){
   })
 });
@@ -28,5 +29,4 @@ if ( window.screen.width < 850 ) {
 	  $j( '#fullmenu' ).fadeOut(1000, function(){
 	  })
 	});
-	
 }
