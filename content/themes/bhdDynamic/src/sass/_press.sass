@@ -84,6 +84,21 @@
   margin-top: -80px
   z-index: -1
 
+#stamp
+  position: absolute
+  right: -37%
+  top: 466%
+  z-index: 0
+  width: 110vw
+  height: 110vw
+
+  +medium
+    right: -8%
+    top: 449%
+    z-index: 5
+    width: 70vw
+    height: 70vw
+
 
 /* OBJECTS -> For styling objects */ 
 /* Includes cosmetic styles like color, typography, and borders */
@@ -106,6 +121,7 @@
       @extend .font-g-b
       font-size: $font-bx4
       letter-spacing: 0.1em
+
 
 
 .press-box
@@ -151,3 +167,6 @@ blockquote
       +medium
         font-size: $font-sx1
         border-bottom-width: 6px
+
+#stamp
+  opacity: 0.45

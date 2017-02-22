@@ -5,8 +5,8 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 #connect
-  margin-top: 100px
-  margin-bottom: 100px
+  padding-top: 100px
+  padding-bottom: 100px
 
   h1
     +marg
@@ -29,6 +29,15 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 #connect
+  background-image: url('#{$uri}assets/shape-02.png')
+  background-repeat: no-repeat
+  background-position: -129px 0px
+  background-size: 162% auto  
+
+  +medium
+    background-position: 221px -20px
+    background-size: 82% auto
+
   h1
     @extend .font-g-b
     font-size: $font-bx4
