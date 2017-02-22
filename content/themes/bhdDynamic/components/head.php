@@ -4,8 +4,6 @@
   */ 
 ?>
 
-
- 
 <header>
 	<p>In the <span>Heart</span> of <span>Houston</span></p>
 </header>
