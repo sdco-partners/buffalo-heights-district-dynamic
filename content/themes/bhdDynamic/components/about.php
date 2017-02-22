@@ -2,13 +2,19 @@
   /** 
   * Section => About
   */ 
+
+  // Variables 
+  $image_a_desk = get_field('01_image_a_desktop', 2);
+  $image_a_mobl = get_field('01_image_a_mobile', 2);
+  $image_b = get_field('01_image_b', 2);
+  $slider_a = get_field('01_image_slider_a', 2); 
 ?>
 
 	<div class="chapter">01<div class="dash"></div></div>
 
 	<article id="sub-01">
 		<h1>In the <span class="fits">Heart</span> of Houston</h1>
-		<p>Buffalo Heights is a high quality, mixed-use district ideally located in the proximity to Houston's Buffalo Bayou Park, Memorial Park, the Heights, Washington Avenue Corridor and Downtown.</p>
+		<p><?php echo get_field('01_copy_a', 2, false); ?></p>
 	</article>
 
   <div id="hear-houston">
@@ -21,27 +27,28 @@
   </div>
 
   <div id="about-slider-01" class="">
-		<img class="about-slider-img" id="about-01" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
-		<img class="about-slider-img" id="about-02" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
-		<img class="about-slider-img" id="about-03" src="<?php echo $GLOBALS['url']."/assets/img-02-desktop.png"; ?>" alt="" />
+    <?php if ( $slider_a ) {
+    	$count = 0;
+    	foreach ($slider_a as $slide ){ ?>
+			  <img class="about-slider-img" id="about-0<?php echo ++$count ?>" src="<?php echo $slide['url']; ?>" alt="<?php echo $slide['alt']; ?>" />
+			<?php }
+		} ?>
 	</div>
 
-
 	<article id="sub-02">
-		<img class="indented-img mobile" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-mobile.png"; ?>" alt="" />
-		<img class="indented-img desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-01-desktop.png"; ?>" alt="" />
+		<img class="indented-img mobile" id="" src="<?php echo $image_a_mobl['url']; ?>" alt="<?php echo $image_a_mobl['alt']; ?>" />
+		<img class="indented-img desktop" id="" src="<?php echo $image_a_desk['url']; ?>" alt="<?php echo $image_a_desk['alt']; ?>" />
 		<h1><span class="fits">1500<sup>+</sup></span> Acres of urban parkland</h1>
-		<p>This innovative real estate development will offer a complete lifestye built around outdoor activity, healthy local food, and signature greenspace in the region's most desirable and accessible urban infill location. New development and upgrades to existing buildings will enhance proximity to the trails and bayou, and more than 1,500 acres of parkland in the urban core of the city</p>
+		<p><?php echo get_field('01_copy_b', 2, false); ?></p>
   </article>
 
 	<blockquote>
-		<h1>There is no location like this one in Houston</h1>
-		<h2>Russel Gordy<br>Owner of BKR Memorial II, LLC</h2>
+		<h1><?php echo get_field('01_quote_a_quote', 2, false); ?></h1>
+		<h2><?php echo get_field('01_quote_a_attr_a', 2, false); ?><br><?php echo get_field('01_quote_a_attr_b', 2, false); ?></h2>
 	</blockquote>
 
 	<article id="sub-03">
-	  <img class="indents-at-desktop mobile" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-mobile.png"; ?>" alt="" />
-	  <img class="indents-at-desktop desktop" id="" src="<?php echo $GLOBALS['url']."/assets/img-04-desktop.png"; ?>" alt="" />
+	  <img class="indents-at-desktop" src="<?php echo $image_b['url']; ?>" alt="<?php echo $image_b['alt']; ?>" />
 	  <h1>Buffalo Heights <span class="too-long">Phase I</span></h1>
-	  <p>The First phaze of Buffalo Heights is a mixed-use Project on Approximately 4 acres at th intersectio of Washington Avenue and South Heights Blvd. The project includes a new urban prototype H-E-B, multi-family, offices and retail.</p>
+	  <p><?php echo get_field('01_copy_c', 2, false); ?></p>
   </article>
