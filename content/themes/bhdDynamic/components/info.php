@@ -18,6 +18,4 @@
       <div class="linkout"><a href="<?php echo $file_path['url']; ?>" target="_blank" alt="<?php echo $file_name; ?>">Download <?php echo $file_name; ?></a></div>
     <?php	}
   } ?>
-<!--   <div class="linkout"><a href="#" target="_blank" alt="Download Leasing Info">Download Leasing PDF</a></div>
-  <div class="linkout"><a href="#" target="_blank" alt="Download Floor Plans">Download Floor Plans PDF</a></div> -->
 </div>
