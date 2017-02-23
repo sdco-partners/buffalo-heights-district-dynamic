@@ -17,10 +17,16 @@ $j( window ).scroll(function(){
 	* Makes nav sticky after x scroll height
   */
 
-	if( $j( window ).scrollTop() > 900 ){
+	if( $j( window ).scrollTop() > 900 && $j( window ).width() > 850 ){
 	  $j( '#nav' ).addClass( 'nav-sticky' );
 	}
-	if( $j( window ).scrollTop() <= 900 ){
+	if( $j( window ).scrollTop() <= 900 && $j( window ).width() > 850 ){
+		$j( '#nav' ).removeClass( 'nav-sticky' );
+	}
+  if( $j( window ).scrollTop() > 653 && $j( window ).width() <= 850 ){
+	  $j( '#nav' ).addClass( 'nav-sticky' );
+	}
+	if( $j( window ).scrollTop() <= 653 && $j( window ).width() <= 850 ){
 		$j( '#nav' ).removeClass( 'nav-sticky' );
 	}
   
@@ -64,26 +70,62 @@ $j( window ).scroll(function(){
 * Scrolls down to section smoother
 */
 
+// Variables
+
+
+
 $j( '#nav-about' ).on('click', function(e){
   e.preventDefault();
-  $j( 'html,body' ).animate({"scrollTop": 900}, 'slow', 'swing');
+  var about = $j( '#about' ).offset();
+  scroller(about.top, 0);
 }) 
 
 $j( '#nav-press' ).on('click', function(e){
   e.preventDefault();
-  $j( 'html,body' ).animate({"scrollTop": 3831}, 'slow', 'swing');
+  var press = $j( '#press' ).offset();
+  scroller(press.top, 280);
 }) 
 
 $j( '#nav-leasing' ).on('click', function(e){
   e.preventDefault();
-  $j( 'html,body' ).animate({"scrollTop": 5350}, 'slow', 'swing');
+  var info = $j( '#info' ).offset();
+  scroller(info.top, 100);
 }) 
 
 $j( '#nav-connect' ).on('click', function(e){
   e.preventDefault();
-  $j( 'html,body' ).animate({"scrollTop": 5777}, 'slow', 'swing');
+  var connect = $j( '#connect' ).offset();
+  scroller(connect.top, 0);
 }) 
 
 
+// Scroller function takes in offset top value and 
+// an adjusment value executes the change 
+
+var scroller = function(top, adjustment) {
+
+	// If desktop & smaller than 900 IE Nav NOT sticky
+	if ( $j( window ).scrollTop() <= 900 && $j( window ).width() > 850 ) {
+		adjustment = adjustment + 46;
+    $j( 'html,body' ).animate({"scrollTop": top - adjustment }, 'slow', 'swing');
+
+	// If desktop & larger than 900 IE Nav IS sticky	
+	} else if( $j( window ).scrollTop() > 900 && $j( window ).width() > 850 ) {
+    $j( 'html,body' ).animate({"scrollTop": top - adjustment }, 'slow', 'swing');
+    
+	// If mobile & larger than 653 IE Nav IS sticky	  
+	} else if ( $j( window ).scrollTop() <= 653 && $j( window ).width() <= 850 ) {
+		adjustment = adjustment + 65;
+    $j( 'html,body' ).animate({"scrollTop": top - adjustment }, 'slow', 'swing');
+
+  // If mobile & larger than 900 IE Nav IS sticky	
+	} else if ( $j( window ).scrollTop() > 653 && $j( window ).width() <= 850 ) {
+		$j( 'html,body' ).animate({"scrollTop": top - adjustment }, 'slow', 'swing');
+
+	}
+
+	// console.log('----', top - adjustment);
+  // console.log( 'window scroll: ', $j( window ).scrollTop(), 'window width: ', $j( window ).width() );
+}
 
 

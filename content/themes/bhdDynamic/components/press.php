@@ -7,6 +7,7 @@
   $press_loop = new WP_Query( array( 'post_type' => 'press', 'order' => 'ASC') );
   $count_press = wp_count_posts( 'press' );
   $published = $count_press->publish;
+  $info = get_field('info_link', 2)
 
   // Determin Press logic
   
@@ -30,6 +31,13 @@ if ( $press_loop -> have_posts() ) {
           <a href="<?php echo get_field('press_link'); ?>" 
             target="_blank" alt="press">
             Read More 
+          </a>
+        </div>
+
+        <div class="linkout" id="press-pdf">
+          <a href="<?php echo $info['url']; ?>" 
+            target="_blank" alt="press">
+            Download Media Kit
           </a>
         </div>
       </blockquote> 

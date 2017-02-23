@@ -13,6 +13,10 @@
 */
 
 $j( '#watch' ).on( 'click', function(){
+  // Stop overflow
+  $j( 'body' ).css('overflow-y', 'hidden');
+
+  // Fade in video, start video.
   $j( '#popup-video' ).fadeIn(500, function(){
   	$j( '.head-text' ).fadeOut('fast', function(){
   		var video = document.getElementById("full-video"); 
@@ -22,6 +26,9 @@ $j( '#watch' ).on( 'click', function(){
 });
 
 $j( '#close-popup' ).on( 'click', function(){
+  // Reset overflow
+  $j( 'body' ).css('overflow-y', 'scroll');
+  // Fade out video, stop play.
   $j( '#popup-video' ).fadeOut(500, function(){
   	$j( '.head-text' ).fadeIn('fast', function(){
   		var video = document.getElementById("full-video"); 
@@ -29,26 +36,3 @@ $j( '#close-popup' ).on( 'click', function(){
   	})
   })
 });
-
-
-/**
-* XX Video Player XX
-* 
-* Youtube video player .. non functional ...
-*/
-
-// var player;
-
-// function onYouTubeIframeAPIReady() {
-//     player = new YT.Player('ytplayer', {
-//         events: {
-//             'onReady': onPlayerReady
-//         }
-//     });
-// }
-
-// function onPlayerReady(event) {
-//     player.mute();
-//     player.playVideo();
-// }
-
