@@ -2,6 +2,7 @@
   /**
   * Section =>  Head
   */ 
+
 ?>
 
 <header>
@@ -23,9 +24,11 @@
 <h2 class="head-text">In the heart of Houston</h2>
 <button class="head-text" id="watch">Watch Video</button>
 
-<div class="video-container">
-  <div id="overlay"></div>
-	<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">
-	</video>
-</div>
+<?php if (!isMobile()) { ?>
+	<div class="video-container">
+	  <div id="overlay"></div>
+		<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">
+		</video>
+	</div>
+<?php } ?>
 

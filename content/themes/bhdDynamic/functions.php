@@ -41,4 +41,14 @@
     remove_action('wp_head', '_admin_bar_bump_cb');
   }
 
+  /**
+  * isMobile
+  *
+  * returns true/false if there is a match for browser. 
+  */
+
+  function isMobile() {
+    return preg_match("/(android|webos|avantgo|iphone|ipad|ipod|blackbe‌​rry|iemobile|bolt|bo‌​ost|cricket|docomo|f‌​one|hiptop|mini|oper‌​a mini|kitkat|mobi|palm|phone|pie|tablet|up\.browser|up\.link|‌​webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
+	}
+
 ?>

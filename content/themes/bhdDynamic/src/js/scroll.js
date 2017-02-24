@@ -77,7 +77,7 @@ $j( window ).scroll(function(){
 $j( '#nav-about' ).on('click', function(e){
   e.preventDefault();
   var about = $j( '#about' ).offset();
-  scroller(about.top, 0);
+  scroller(about.top, -5);
 }) 
 
 $j( '#nav-press' ).on('click', function(e){

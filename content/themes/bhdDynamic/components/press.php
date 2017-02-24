@@ -79,6 +79,6 @@ if ( $press_loop -> have_posts() ) {
 
 </div>
 <img class="mobile" id="press-img" 
-  src="<?php echo $GLOBALS['url']."/assets/img-05-mobile.png"; ?>" alt="" />
+  src="http://50.28.54.252/~bhddynamic/content/uploads/2017/02/img-05-mobile-1.png" alt="" />
 <img class="desktop" id="press-img" 
-  src="<?php echo $GLOBALS['url']."/assets/img-05-desktop.png"; ?>" alt="" />
+  src="http://50.28.54.252/~bhddynamic/content/uploads/2017/02/img-05-desktop.png" alt="" />
