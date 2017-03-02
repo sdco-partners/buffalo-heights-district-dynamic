@@ -43,3 +43,10 @@ $j( '.menu-link' )
   }).mouseleave(function(){
 	  $j(this).prev().css("color", "rgba(193, 74, 54, 0.0)");
 })
+
+$j( '#back-to-top' )
+  .mouseenter(function(){
+	  $j( '.bhd-seal-fills-2' ).css("fill", "#EAEAEA");
+  }).mouseleave(function(){
+	  $j( '.bhd-seal-fills-2' ).css("fill", "rgba(193, 74, 54, 0.7)");
+})

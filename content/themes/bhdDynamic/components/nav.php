@@ -5,6 +5,9 @@
 ?>
 
 <h1>Buffalo Heights</h1>
+<div id="back-to-top" alt="Back To Top">
+  <?php echo file_get_contents($GLOBALS['url']."/assets/bhd-logo-stamp-2.svg"); ?>
+</div>
 <div id="fullmenu">
   <a href="" id="close-menu"><?php echo file_get_contents($GLOBALS['url']."/assets/close-bttn.svg"); ?></a>
 	<div class="fullmenu">

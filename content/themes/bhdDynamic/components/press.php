@@ -25,8 +25,8 @@ if ( $press_loop -> have_posts() ) {
 
       <blockquote>
         <h1><?php echo get_field('press_quote'); ?></h1>
-        <h2><?php echo get_field('publication'); ?><br>
-        <?php echo get_field('press_date'); ?></h2>
+        <h2><?php echo get_field('press_attr'); ?><br>
+        <?php echo get_field('publication'); ?></h2>
         <div class="linkout">
           <a href="<?php echo get_field('press_link'); ?>" 
             target="_blank" alt="press">

@@ -98,6 +98,11 @@ $j( '#nav-connect' ).on('click', function(e){
   scroller(connect.top, 0);
 }) 
 
+$j( '#back-to-top' ).on('click', function(e){
+  e.preventDefault();
+  scroller(0, 0);
+}) 
+
 
 // Scroller function takes in offset top value and 
 // an adjusment value executes the change 

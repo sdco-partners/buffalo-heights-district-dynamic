@@ -33,7 +33,7 @@
 <div id="footer-info">
   <div>
     <h2>Owner</h2>
-    <h1>BKR Memorial II, LLC</h1>
+    <h1>BKR Memorial, LLC</h1>
   </div>
   <div>
     <h2>Developer</h2>

@@ -44,7 +44,7 @@
 		<img class="indented-img desktop" id="" 
 		  src="<?php echo $image_a_desk['url']; ?>" 
 		  alt="<?php echo $image_a_desk['alt']; ?>" />
-		<h1><span class="fits">1500<sup>+</sup></span> Acres of urban parkland</h1>
+		<h1><span class="fits">50<sup>+</sup></span> Acre Mixed- Use District</h1>
 		<p><?php echo get_field('01_copy_b', 2, false); ?></p>
   </article>
 

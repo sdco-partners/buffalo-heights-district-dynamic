@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309.93 331.86">
+	<defs>
+		<style>
+			.bhd-seal-01-02{isolation:isolate;}.bhd-seal-02-02{opacity:1;mix-blend-mode:multiply;}.bhd-seal-fills-2{fill:#EAEAEA;}
+		</style>
+	</defs>
+
+	<path class="bhd-seal-fills-2" d="M157,254.34a88.64,88.64,0,1,1,88.64-88.64A88.74,88.74,0,0,1,157,254.34Zm0-169.92a81.29,81.29,0,1,0,81.29,81.29A81.38,81.38,0,0,0,157,84.42Z"/>
+	<path class="bhd-seal-fills-2" d="M113.92,234.74h-7.35V93.12h43.08a33.23,33.23,0,0,1,15.18,62.79,33.23,33.23,0,0,1-15.18,62.79H126.28V112.94h7.35v98.42h16a25.89,25.89,0,1,0,0-51.77v-7.35a25.89,25.89,0,1,0,0-51.77H113.92Z"/>
+	<rect class="bhd-seal-fills-2" x="198.12" y="92.23" width="7.35" height="146.01"/>
+	<rect class="bhd-seal-fills-2" x="153.62" y="152.09" width="48.18" height="7.35"/>
+</svg>
