@@ -46,12 +46,17 @@
     +min
       font-size: $font-xl
 
-  address
+  address a
     @extend .font-g-b
     font-size: $font-bx1
     line-height: 2em
     letter-spacing: 0.1em
     text-transform: uppercase
+    transition: color 0.5s
+    color: $site-black
+
+    &:hover
+      color: $site-red
 
     +min
       font-size: $font-bx2
