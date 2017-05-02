@@ -19,6 +19,8 @@
 	document.documentElement.setAttribute("data-browser", navigator.userAgent);
 </script>
 
+<script src="//localhost:35729/livereload.js"></script>
+
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">

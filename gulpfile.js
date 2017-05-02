@@ -2,9 +2,12 @@ var gulp = require("gulp")
 , sass = require("gulp-sass")
 , uglify = require("gulp-uglify")
 , concat = require('gulp-concat')
-, livereload = require('gulp-livereload')
 , clean = require('gulp-clean-css')
-, sourcemaps = require('gulp-sourcemaps');
+, sourcemaps = require('gulp-sourcemaps')
+, plumber = require('gulp-plumber')
+, notify = require('gulp-notify')
+, livereload = require('gulp-livereload')
+, modernizr = require('gulp-modernizr');
 
 
 // uri
@@ -13,47 +16,57 @@ var uri = './content/themes/bhdDynamic/';
 var paths = {
 	scss: uri.concat('src/sass/**/*.sass'),
 	styles: uri.concat('src/sass/styles.sass'),
+	php: uri.concat('**/*.php'),
 	js: uri.concat('src/js/**/*.js'),
-	// modernizr: './modernizr.js',
 	src: uri.concat('src/js'),
-	dest: uri.concat('prod/')
+	dest: uri.concat('prod/'),
+	modJs: uri.concat('prod/scripts-min.js'),
+	modCss: uri.concat('prod/styles.css')
 }
+
+// Error Handling
+var plumberErrorHandler = {
+	errorHandler: notify.onError({
+		title: 'Gulp',
+		message: 'Error. <%= error.message %>'
+	})
+};
 
 // Sass to Css-min
 gulp.task('styles', function() {
 	gulp.src(paths.styles)
-	  .pipe(sass().on('error', sass.logError))
+	  .pipe(plumber(plumberErrorHandler))
+	  .pipe(sass())
     .pipe(clean())
-	  .pipe(gulp.dest(paths.dest));
+	  .pipe(gulp.dest(paths.dest))
+	  .pipe(livereload());
 });
-
-// Minify Css 
-gulp.task('minify', function() {
-  return gulp.src(paths.dest.concat('styles.css'))
-    .pipe(sourcemaps.init())
-    .pipe(clean())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.dest));
-});
-
-// Move Files
-/*gulp.task('move', function() {
-	gulp.src(paths.modernizr)
-		  .pipe(gulp.dest(paths.src));
-});*/
 
 // Uglify JS
 gulp.task('uglify', function() {
 	gulp.src(paths.js)
-		.pipe(concat('scripts-min.js'))
+		.pipe(plumber(plumberErrorHandler))
+		.pipe(concat('scripts.js'))
 	  .pipe(uglify())
-	  .pipe(gulp.dest(paths.dest));
+	  .pipe(gulp.dest(paths.dest))
+	  .pipe(livereload())
 });
+
+// Run Moderizr on css & js
+gulp.task('modernizr', function() {
+	gulp.src([paths.modCss, paths.modJs])
+    .pipe(modernizr())
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.dest));
+})
 
 // Watch task
 gulp.task('default', function() {
+	livereload.listen();
+	gulp.watch(paths.php, livereload.reload);
 	gulp.watch(paths.scss, ['styles']);
 	gulp.watch(paths.js, ['uglify']);
-	gulp.watch(paths.dest, ['minify']);
+	// gulp.watch([paths.modJs, paths.modCss], ['modernizr']);
 });
+
 
