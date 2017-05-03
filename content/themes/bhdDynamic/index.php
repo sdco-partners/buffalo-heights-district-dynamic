@@ -30,7 +30,7 @@
   <?php get_template_part('components/about'); ?>
 </section>
 
-<!-- ====  Section: Press  ==== -->>
+<!-- ====  Section: Press  ==== -->
 <section id="press">
   <?php get_template_part('components/press'); ?>
 </section>

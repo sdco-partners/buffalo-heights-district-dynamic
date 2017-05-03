@@ -6,11 +6,12 @@
 
 
 #press
+  position: relative
   margin-top: 200px
 
   +medium
     margin-top: 250px
-
+ 
   > .chapter
     position: relative
     top: -120px
@@ -20,8 +21,9 @@
 
   > blockquote
     position: relative
-    top: -120px
+    top: -110px
     margin-bottom: 0
+    z-index: 30
 
     +medium
       top: -190px
@@ -43,6 +45,7 @@
 
 
 #press-section
+  padding-left: 16px
   +medium
     width: 888px
     // width: 590px
@@ -57,27 +60,65 @@
 .press-box
   position: relative
   margin: 0 auto -8px
-  width: 300px
-  height: 255px
+  padding: 8px
+  width: 250px
+  height: 190px
+  z-index: 30
+
 
   +min
     width: 450px
     height: 200px
 
-
   +medium
     flex: 0 0 287px
     margin-left: -8px
     margin-bottom: -8px
+    z-index: 1
+
+  &:before
+    content: "  "
+    padding-left: 250px
+    padding-top: 190px
+    position: absolute
+    top: -8px
+    left: -8px
+    z-index: -1
+
+    +min
+      padding-left: 450px
+      padding-top: 200px
+
+    +medium
+      padding-left: 287px
+      padding-top: 200px
+
+
+  &:after
+    content: "  "
+    padding-right: 260px
+    padding-top: 200px
+    position: absolute
+    top: 10px
+    left: 10px
+    z-index: -2
+
+    +min
+      padding-right: 460px
+      padding-top: 210px
+
+    +medium
+      padding-right: 297px
+      padding-top: 210px
+
 
 
   > h1
     margin: 30px 30px 10px 30px
 
   .linkout
+    margin: 0 30px
   
-    +medium
-      margin: 0 30px
 
 
 #press-img
@@ -103,6 +144,28 @@
 #press-pdf
   margin-top: 15px
 
+// #stamp-overlay
+//   position: relative
+//   width: 100vw
+//   height: 100
+//   overflow-x: hidden
+
+//   svg
+//     position: absolute
+//     top: 50px
+//     right: -175px
+//     width: 600px
+//     height: 600px
+//     z-index: 1
+//     opacity: 0.5
+
+//     +medium
+//       top: 300px
+//       right: -200px
+//       width: 800px
+//       height: 800px
+//       opacity: 0.3
+
 /* OBJECTS -> For styling objects */ 
 /* Includes cosmetic styles like color, typography, and borders */
 /* INCEPTION RULE: DO NOT nest more than 4  */
@@ -110,8 +173,8 @@
 #press
   background-image: url('../assets/bhd-logo-stamp.svg')
   background-repeat: no-repeat
-  background-position: 111px -515px
-  background-size: 95% 95%
+  background-position: 111px -295px
+  background-size: 125% 125%
   background-color: $site-cream
 
   +medium
@@ -126,13 +189,16 @@
       letter-spacing: 0.1em
 
 
-
 .press-box
-  border: 8px solid $site-black
-  background-color: $site-white
+  // border: 8px solid $site-white
+  &:before
+    border: 8px solid $site-black
+
+  &:after
+    background-color: $site-white
 
   > h1
-    font-size: $font-bx1
+    font-size: 0.8em
     letter-spacing: 0.2em
     line-height: 2em
 
@@ -150,7 +216,7 @@ blockquote
 
   > h1
     @extend .font-g-b
-    font-size: $font-xl
+    font-size: 2.2em
     letter-spacing: 0.1em
     line-height: 1.2em
 
@@ -158,7 +224,7 @@ blockquote
       font-size: $font-xlx1
 
   > h2
-    font-size: $font-bx1
+    font-size: 1em
     letter-spacing: 0.2em
     line-height: 1.5em
 

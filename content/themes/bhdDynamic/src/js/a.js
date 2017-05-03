@@ -5,3 +5,5 @@
 */
 
 $j = jQuery.noConflict();
+
+var watching = false;

@@ -17,13 +17,13 @@ $j( window ).scroll(function(){
 	* Makes nav sticky after x scroll height
   */
 
-	if( $j( window ).scrollTop() > 900 && $j( window ).width() > 850 ){
+	if( $j( window ).scrollTop() > 900 && $j( window ).width() > 850 && !watching){
 	  $j( '#nav' ).addClass( 'nav-sticky' );
 	}
-	if( $j( window ).scrollTop() <= 900 && $j( window ).width() > 850 ){
+	if( $j( window ).scrollTop() <= 900 && $j( window ).width() > 850){
 		$j( '#nav' ).removeClass( 'nav-sticky' );
 	}
-  if( $j( window ).scrollTop() > 653 && $j( window ).width() <= 850 ){
+  if( $j( window ).scrollTop() > 653 && $j( window ).width() <= 850 && !watching ){
 	  $j( '#nav' ).addClass( 'nav-sticky' );
 	}
 	if( $j( window ).scrollTop() <= 653 && $j( window ).width() <= 850 ){
@@ -83,7 +83,11 @@ $j( '#nav-about' ).on('click', function(e){
 $j( '#nav-press' ).on('click', function(e){
   e.preventDefault();
   var press = $j( '#press' ).offset();
-  scroller(press.top, 280);
+  if( $j( window ).width() < 850 ){
+	  scroller(press.top, 220);
+  } else {
+  	scroller(press.top, 280);
+  }
 }) 
 
 $j( '#nav-leasing' ).on('click', function(e){

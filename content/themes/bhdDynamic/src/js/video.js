@@ -13,9 +13,10 @@
 */
 
 $j( '#watch' ).on( 'click', function(){
+  watching = true; 
   // Stop overflow
   $j( 'body' ).css('overflow-y', 'hidden');
-
+  
   // Fade in video, start video.
   $j( '#popup-video' ).fadeIn(500, function(){
   	$j( '.head-text' ).fadeOut('fast', function(){
@@ -26,6 +27,7 @@ $j( '#watch' ).on( 'click', function(){
 });
 
 $j( '#close-popup' ).on( 'click', function(){
+  watching = false;
   // Reset overflow
   $j( 'body' ).css('overflow-y', 'scroll');
   // Fade out video, stop play.

@@ -10,7 +10,7 @@
   +frow
   height: 65px
   padding-top: 20px
-  width: 100%
+  width: 100vw
   position: relative
   z-index: 15
 
@@ -21,7 +21,7 @@
 
   > h1
     margin-left: 30px
-    margin-top: 5px
+    margin-top: 8px
 
     +min
       margin-top: initial
@@ -114,7 +114,7 @@
 
   > h1 
     color: $site-darkred
-    font-size: $font-bx1
+    font-size: 1em
     opacity: 0.7
 
     +min
@@ -154,5 +154,10 @@
 
 
 #back-to-top
+  display: none
+
   .bhd-seal-fills-2
     fill: rgba(193, 74, 54, 0.7)
+
+  +medium
+    display: block

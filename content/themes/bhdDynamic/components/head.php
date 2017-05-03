@@ -2,6 +2,9 @@
   /**
   * Section =>  Head
   */ 
+  
+  $isItMobile = isMobile();
+  test($isItMobile, 'is mobile');
 
 ?>
 
@@ -12,7 +15,7 @@
 <div id="popup-video">
   <a id="close-popup" href="#"><?php echo file_get_contents($GLOBALS['url']."/assets/close-bttn.svg"); ?></a>
 	<div class="video-container-popup">
-		<video id="full-video" muted controls src="<?php echo $GLOBALS['url']."/assets/video-02.mp4";?>">
+		<video id="full-video" controls src="<?php echo $GLOBALS['url']."/assets/video-02.mp4";?>">
 		</video>
 	</div>
 	<div id="overlay-popup"></div> 
@@ -24,7 +27,7 @@
 <h2 class="head-text">In the heart of Houston</h2>
 <button class="head-text" id="watch">Watch Video</button>
 
-<?php if (!isMobile()) { ?>
+<?php if ( !isMobile() ) { ?>
 	<div class="video-container">
 	  <div id="overlay"></div>
 		<video autoplay loop muted src="<?php echo $GLOBALS['url']."/assets/video-01.mp4"; ?>">

@@ -27,7 +27,7 @@
 	  wp_enqueue_script('cloud.typography', 'https://fast.fonts.net/jsapi/8cd2f97e-4a17-4a9f-8e26-eaa420c86031.js');
 		wp_enqueue_style('styles', $GLOBALS['url'].'/prod/styles.css');
 
-		wp_enqueue_script('scripts-min', $GLOBALS['url'].'/prod/scripts-min.js', array('jquery'), '1.0.0', true);
+		wp_enqueue_script('scripts-min', $GLOBALS['url'].'/prod/scripts.js', array('jquery'), '1.0.0', true);
 
   }
 
@@ -50,5 +50,15 @@
   function isMobile() {
     return preg_match("/(android|webos|avantgo|iphone|ipad|ipod|blackbe‌​rry|iemobile|bolt|bo‌​ost|cricket|docomo|f‌​one|hiptop|mini|oper‌​a mini|kitkat|mobi|palm|phone|pie|tablet|up\.browser|up\.link|‌​webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 	}
+
+  /**
+  *
+  * test
+  *
+  * shortcut to test function
+  */
+  function test ($var, $mes){
+    echo "<script>console.log('".$var.", outputs ".$mes."');</script>";
+  };
 
 ?>

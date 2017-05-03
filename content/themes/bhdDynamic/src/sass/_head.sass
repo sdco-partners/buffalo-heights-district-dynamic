@@ -25,7 +25,7 @@
   #head-seal
     width: 75px
     height: 75px
-    margin: 50px auto 25px
+    margin: 10vh auto 25px
     position: relative
     z-index: 10
 
@@ -41,13 +41,19 @@
 
 
 #close-popup
-  position: absolute
-  top: 30px
-  right: 30px
+  position: fixed
+  top: 15px
+  right: 15px
   z-index: 17
+  
   svg 
     width: 25px
     height: 25px
+  
+  +min 
+    top: 30px
+    right: 30px
+
 
 
 .video-container 

@@ -82,3 +82,6 @@ if ( $press_loop -> have_posts() ) {
   src="http://50.28.54.252/~bhddynamic/content/uploads/2017/02/img-05-mobile-1.png" alt="" />
 <img class="desktop" id="press-img" 
   src="http://50.28.54.252/~bhddynamic/content/uploads/2017/02/img-05-desktop.png" alt="" />
+<!-- <div id="stamp-overlay">
+  <?php //echo file_get_contents($GLOBALS['url'].'/assets/bhd-logo-stamp.svg') ?>
+</div> -->
