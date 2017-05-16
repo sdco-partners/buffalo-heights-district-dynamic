@@ -3,19 +3,23 @@
   * Section => Info
   */ 
 
-  // Variables
-  $documents = get_field( '03_documents', 2);
 ?>
 
 <div class="chapter">03<div class="dash"></div></div>
 <div>
   <h1>Leasing Information</h1>
-  <?php if( $documents ){ 
-  	foreach( $documents as $doc ){ 
-  		$file_path = $doc['03_doc_link'];
-  		$file_name = $doc['03_doc_name'];
-  		?>
-      <div class="linkout"><a href="<?php echo $file_path['url']; ?>" target="_blank" alt="<?php echo $file_name; ?>">Download <?php echo $file_name; ?></a></div>
-    <?php	}
-  } ?>
+  <?php if ( have_rows('03_docs_fc', 2) ): while ( have_rows('03_docs_fc', 2) ) : the_row(); ?>
+    <div class="linkout">
+    <?php if ( get_row_layout() === '03_docs_fc-download' ) :
+      $file = get_sub_field('03_doc-fc-download-file'); ?>
+        <a href="<?php echo $file['file']; ?>" target="_blank">
+          Download <?php echo get_sub_field('03_doc-fc-download-name'); ?>
+        </a>
+    <?php elseif ( get_row_layout() === '03_docs_fc-link' ) : ?>
+        <a href="<?php echo get_sub_field('03_doc-fc-link-link'); ?>" target="_blank">
+          View <?php echo get_sub_field('03_doc-fc-link-name'); ?>
+        </a>
+    <?php endif; ?>
+    </div>
+  <?php endwhile;endif; ?>
 </div>

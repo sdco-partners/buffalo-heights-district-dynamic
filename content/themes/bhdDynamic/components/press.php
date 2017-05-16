@@ -4,7 +4,7 @@
   */ 
 
   // Variables
-  $press_loop = new WP_Query( array( 'post_type' => 'press', 'order' => 'ASC') );
+  $press_loop = new WP_Query( array( 'post_type' => 'press', 'order' => 'DESC') );
   $count_press = wp_count_posts( 'press' );
   $published = $count_press->publish;
   $info = get_field('info_link', 2)
