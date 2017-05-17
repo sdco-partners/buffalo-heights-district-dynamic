@@ -33,13 +33,20 @@ if ( $press_loop -> have_posts() ) {
             Read More 
           </a>
         </div>
-
+        <?php if ( have_rows('press_flexible_content', 2) ): while ( have_rows('press_flexible_content', 2) ) : the_row(); ?>
         <div class="linkout" id="press-pdf">
-          <a href="<?php echo $info['url']; ?>" 
-            target="_blank" alt="press">
-            Download Media Kit
-          </a>
+          <?php if ( get_row_layout() === '03_press_fc-download' ) :
+            $file = get_sub_field('03_press-fc-download-file'); ?>
+            <a href="<?php echo $file['url']; ?>" target="_blank">
+              Download <?php echo get_sub_field('03_press-fc-download-name'); ?>
+            </a>
+          <?php elseif ( get_row_layout() === '03_press_fc-link' ) : ?>
+            <a href="<?php echo get_sub_field('03_press-fc-link-link'); ?>" target="_blank">
+              Download <?php echo get_sub_field('03_press-fc-link-name'); ?>
+            </a>
+          <?php endif; ?>
         </div>
+        <?php endwhile;endif; ?>
       </blockquote> 
 
 <?php 

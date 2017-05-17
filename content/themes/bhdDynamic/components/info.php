@@ -12,7 +12,7 @@
     <div class="linkout">
     <?php if ( get_row_layout() === '03_docs_fc-download' ) :
       $file = get_sub_field('03_doc-fc-download-file'); ?>
-        <a href="<?php echo $file['file']; ?>" target="_blank">
+        <a href="<?php echo $file['url']; ?>" target="_blank">
           Download <?php echo get_sub_field('03_doc-fc-download-name'); ?>
         </a>
     <?php elseif ( get_row_layout() === '03_docs_fc-link' ) : ?>
