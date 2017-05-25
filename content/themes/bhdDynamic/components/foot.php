@@ -14,20 +14,25 @@
   </header>
   <ul id="footer-links">
     <li class="links">
-      <a href="<?php echo get_field('vimeo_link', 2, false); ?>" alt="" target="_blank">
-        <?php echo file_get_contents($GLOBALS['url']."/assets/vimeo.svg"); ?>     
+      <a href="<?php echo get_field('faceb_link', 2, false); ?>" alt="" target="_blank">
+        <?php echo file_get_contents($GLOBALS['url']."/assets/faceb.svg"); ?>     
       </a>
     </li>
+    <li class="links">
+      <a href="<?php echo get_field('twita_link', 2, false); ?>" alt="" target="_blank">
+        <?php echo file_get_contents($GLOBALS['url']."/assets/twita.svg"); ?>
+      </a>
+    </li>
+    <li class="links">
+      <a href="<?php echo get_field('insta_link', 2, false); ?>" alt="" target="_blank">
+        <?php echo file_get_contents($GLOBALS['url']."/assets/insta.svg"); ?>
+      </a>
+    </li> 
     <li class="links">
       <a href="mailto:<?php echo get_field('mail_link', 2); ?>" alt="" target="_blank">
         <?php echo file_get_contents($GLOBALS['url']."/assets/mail.svg"); ?>
       </a>
     </li>
-    <li class="links">
-      <a href="<?php echo $info['url']; ?>" alt="" target="_blank">
-        <?php echo file_get_contents($GLOBALS['url']."/assets/info.svg"); ?>
-      </a>
-    </li> 
   </ul>
 </div>
 <div id="footer-info">
