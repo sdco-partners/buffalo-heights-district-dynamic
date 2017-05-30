@@ -164,6 +164,6 @@ For All other files ...
 ## Team 
   
   * PROJECT MANAGER   :   Paige Feighley
-  * UX/UI DESIGNER    :   Evan Tarry
+  * UX/UI DESIGNER    :   Kristmar Muldrow
   * DEVELOPER         :   Asifuzzaman Ahmed
 
