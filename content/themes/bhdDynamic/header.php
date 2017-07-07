@@ -15,18 +15,19 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 
+<head>
+
 <script type="text/javascript">
 	document.documentElement.setAttribute("data-browser", navigator.userAgent);
 </script>
 
 <script src="//localhost:35729/livereload.js"></script>
 
-
-<head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="profile" href="http://gmpg.org/xfn/11"> -->
 	
+  <?php include_once("analyticstracking.php") ?>
 
   <?php wp_head(); ?>
 </head>
